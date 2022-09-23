@@ -1,0 +1,12 @@
+:root{
+    --#{$variable-prefix}font-cursive: #{inspect($font-family-cursive)};
+    --#{$variable-prefix}font-monospace: #{inspect($font-family-monospace)};
+    --#{$variable-prefix}font-fantasy:#{inspect($font-family-fantasy)};
+    --#{$variable-prefix}font-heebo: #{inspect($font-family-heebo)};
+
+    --#{$variable-prefix}bd-font-family: #{$font-family-base};
+    --#{$variable-prefix}bd-font-size: #{$font-size};
+    --#{$variable-prefix}bd-font-weight: #{$font-weight-normal};
+    --#{$variable-prefix}bd-line-height: #{$line-height};
+    // --#{$variable-prefix}bd-color: #{$body-color};
+}

@@ -1,0 +1,39 @@
+$variable-prefix: pr- !default;
+$white: #fff;
+$black: #000;
+$blue: #00205c;
+$gray: #f5f9fc;
+$darkgray: #232937;
+$white-gary: #ebebeb;
+
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-cursive: cursive !default;
+$font-family-monospace: "Courier New", monospace !default;
+$font-family-fantasy: fantasy !default;
+$font-family-heebo: 'Heebo', sans-serif !default; 
+
+$font-family-base: var(--#{$variable-prefix}font-cursive);
+$font-family-code: var(--#{$variable-prefix}font-monospace);
+$font-family-fanta: var(--#{$variable-prefix}font-fantasy);
+$font-family-basic: var(--#{$variable-prefix}font-heebo);
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: var(--#{$variable-prefix}bd-font-weight);
+
+$font-size:16px;
+$font-size-base: var(--#{$variable-prefix}bd-font-size); 
+$font-size-h1: 60px;
+$font-size-h2: 50px;
+$font-size-h3: 42px;
+$font-size-h4: 32px;
+$font-size-h5: 20px;
+$font-size-h6: $font-size-base;
+
+$line-height: 1.5 !default;
+$line-height-base: var(--#{$variable-prefix}bd-line-height);
