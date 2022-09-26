@@ -4,15 +4,78 @@
 @import "sass/root";
 @import "sass/reusable";
 
+.rank {
+    .di-block {
+        @include valign-middle();
+        padding: 0px 10px;
+        .r-box {
+            min-height: 180px;
+            padding: 14px;
+            background: $white;
+            @include border-radius(5px);
+            -webkit-box-shadow: 0px 0px 19.44px 4.56px rgba(0, 0, 0, .05);
+            box-shadow: 0px 0px 19.44px 4.56px rgba(0, 0, 0, .05);
+            .thumbnail {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto 20px;
+                text-align: center;
+                @include pos-relative();
+                img {
+                    @include vertical-center();
+                }
+            }
+            p {
+                color: $lightblack;
+                font-family: $font-family-gil-lt;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                min-height: 55px;
+            }
+        }
+    }
+}
+
+
+
+.corporate{
+    padding: 75px 0 10px;
+    h2{
+        text-align: center;
+        &::after{
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: -120px;
+        }
+    }
+    .thumbnail{
+        height: 92px;
+        @include pos-relative();
+        img{
+            @include vertical-center();
+        }
+    }
+}
+
 .about {
-    padding: 80px 0 100px;
+    padding: 75px 0 75px;
     .di-block{
+        font-size: inherit;
+        @include valign-top();
+        margin-bottom: 25px;
+        &:nth-child(1){
+            p{
+                max-width: 373px;
+            }
+        }
         &:nth-child(2){
             padding-left: 100px;
         }
-    }
+    }    
     .highlight {
         @include di-block();
+        @include valign-top();
         width: 50%;
         // padding-left: 100px;
         min-height: 110px;
@@ -27,8 +90,11 @@
             right: 0;
             top: 0;
         }
-        &:nth-child(1), &:nth-child(3){ padding-right: 100px;}
-        &:nth-child(2), &:nth-child(4){ padding-left: 100px;}
+        &:nth-child(1), &:nth-child(3){ padding-right: 35px;}
+        &:nth-child(2), &:nth-child(4){ /*padding-left: 100px;*/ padding-left: 21%;}
+        &:nth-child(1), &:nth-child(2){ padding-top: 10px; padding-bottom: 30px;}
+        &:nth-child(3), &:nth-child(4){ padding-top: 30px; padding-bottom: 10px;}        
+        
 
         &:nth-child(1)::before, &:nth-child(2)::before{
             content: "";
@@ -39,6 +105,25 @@
             right: 0;
             bottom: 0;
         }
+        p{
+            color: $darkgray;
+            font-family: $font-family-gil-bd;
+            font-size: 18px;            
+            text-align: left;
+            font-weight: 600;
+            line-height: 30px;
+            &:first-child {
+                font-size: 36px;
+                margin-bottom: 5px;
+                span{
+                    font-size: 36px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 40px;
+                }
+                
+            }
+        }
     }
 }
 
@@ -48,9 +133,58 @@
 
     h2 {
         text-align: center;
+        &::after{
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: -94px;
+        }
+    }
+    .accredit-carousel{
+        .owl-item {
+            .item{
+                border-right: 1px solid $whitedarkgray;
+                text-align: center;
+                .thumbnail{
+                    @include pos-relative();
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }            
 
-        &::after {
-            left: auto;
         }
     }
 }
+footer{
+    background: $darkgray;
+    padding: 30px 0;
+    p{
+        color: $lightgray;
+        font-family: $font-family-gil-lt;
+        font-size: 14px;
+        text-align: left;
+    }
+    .social-icons{
+        text-align: right;
+        li{ 
+            @include di-block();
+            @include valign-middle();
+            margin-right: 14px;
+            span{
+                color: $lightgray;
+                font-family: $font-family-gil-lt;
+                font-size: 14px;
+                text-align: left;
+            }
+            a{ 
+                @include di-block();
+                @include valign-middle();
+            }
+        }
+    }
+    
+}
+
+
+@import "sass/media";

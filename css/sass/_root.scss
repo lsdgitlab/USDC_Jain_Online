@@ -9,4 +9,9 @@
     --#{$variable-prefix}bd-font-weight: #{$font-weight-normal};
     --#{$variable-prefix}bd-line-height: #{$line-height};
     // --#{$variable-prefix}bd-color: #{$body-color};
+
+    --#{$variable-prefix}font-gilroylight: #{$font-family-gilory-light};
+    --#{$variable-prefix}font-gilroyregular: #{$font-family-gilroy-regular};
+    --#{$variable-prefix}font-gilroybold: #{$font-family-gilroy-bold};
+    --#{$variable-prefix}font-gilroyextrabold: #{$font-family-gilory-extrabold};
 }

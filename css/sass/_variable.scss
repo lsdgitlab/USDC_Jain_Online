@@ -2,9 +2,13 @@ $variable-prefix: pr- !default;
 $white: #fff;
 $black: #000;
 $blue: #00205c;
+$lightgray: #efffff;
 $gray: #f5f9fc;
 $darkgray: #232937;
 $white-gary: #ebebeb;
+$whitedarkgray: #e9eaeb;
+$lightblack: #646464;
+
 
 
 $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -12,11 +16,21 @@ $font-family-cursive: cursive !default;
 $font-family-monospace: "Courier New", monospace !default;
 $font-family-fantasy: fantasy !default;
 $font-family-heebo: 'Heebo', sans-serif !default; 
+$font-family-gilory-light: "Gilroy-Light";
+$font-family-gilroy-regular: "Gilroy-Regular";
+$font-family-gilroy-bold: "Gilroy-Bold";
+$font-family-gilory-extrabold: "Gilroy-ExtraBold";
+
 
 $font-family-base: var(--#{$variable-prefix}font-cursive);
 $font-family-code: var(--#{$variable-prefix}font-monospace);
 $font-family-fanta: var(--#{$variable-prefix}font-fantasy);
 $font-family-basic: var(--#{$variable-prefix}font-heebo);
+
+$font-family-gil-lt: var(--#{$variable-prefix}font-gilroylight);
+$font-family-gil-rg: var(--#{$variable-prefix}font-gilroyregular);
+$font-family-gil-bd: var(--#{$variable-prefix}font-gilroybold);
+$font-family-gil-xbd: var(--#{$variable-prefix}font-gilroyextrabold);
 
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
