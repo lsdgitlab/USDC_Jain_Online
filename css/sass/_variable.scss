@@ -8,7 +8,8 @@ $darkgray: #232937;
 $white-gary: #ebebeb;
 $whitedarkgray: #e9eaeb;
 $lightblack: #646464;
-
+$darkblue: #00205c;
+$yellow: #fab615;
 
 
 $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -20,12 +21,13 @@ $font-family-gilory-light: "Gilroy-Light";
 $font-family-gilroy-regular: "Gilroy-Regular";
 $font-family-gilroy-bold: "Gilroy-Bold";
 $font-family-gilory-extrabold: "Gilroy-ExtraBold";
-
+$font-family-opensans: 'Open Sans', sans-serif;
 
 $font-family-base: var(--#{$variable-prefix}font-cursive);
 $font-family-code: var(--#{$variable-prefix}font-monospace);
 $font-family-fanta: var(--#{$variable-prefix}font-fantasy);
 $font-family-basic: var(--#{$variable-prefix}font-heebo);
+$font-family-osans: var(--#{$variable-prefix}font-opensans);
 
 $font-family-gil-lt: var(--#{$variable-prefix}font-gilroylight);
 $font-family-gil-rg: var(--#{$variable-prefix}font-gilroyregular);

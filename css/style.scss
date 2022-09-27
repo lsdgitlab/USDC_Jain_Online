@@ -4,7 +4,238 @@
 @import "sass/root";
 @import "sass/reusable";
 
+header{
+    background: $darkblue;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);  
+    z-index: 11;  
+    .di-block{
+        @include valign-middle();
+        &:first-child{
+            text-align: left;
+        }
+        &:nth-child(2){ 
+            text-align: right;
+        }
+        .thumbnail{
+            padding: 26px 0;
+            img{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .tel{
+            img{
+                margin-right: 8px;                
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span{
+                color: $white;
+                font-family: $font-family-gil-bd;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.top-banner{
+    background: $darkblue;
+    // background: $darkblue url("../img/top-banner.png") scroll no-repeat top left;
+    // -webkit-background-size: cover;
+    // background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+    .di-block{
+        @include valign-top();
+        &:first-child{
+            // max-width: 837px;
+            // width: 100%;
+            width: 71%;
+            background: $darkblue url("../img/top-banner-girl-desktop.png") scroll no-repeat top left;
+            background-position: 158% 0;
+        }
+        &:nth-child(2){
+            // max-width: 333px;
+            // width: 100%;
+            width: 29%;
+            // background: $white;
+        }        
+    }
+    .text-box{
+        max-width: 464px;
+        padding: 16.5% 0;
+        h1, h2{
+            // font-family: $font-family-osans;
+            font-family: $font-family-gil-bd;
+            font-size: 34px;
+            line-height: 42px;
+            text-align: left;
+            font-weight: 700;
+        }
+        h1{
+            color: #fff;
+            @include pos-relative();
+            &::after{
+                content: "";
+                position: absolute;
+                top: -18px;
+                left: 0;
+                background: transparent url("../img/big-plus-sign.png") scroll no-repeat top left;
+                height: 28px;
+                width: 28px;   
+                margin-left: 273px;                             
+            }
+        }
+        h2{
+            color: $yellow;            
+            padding: 0;
+            margin: 0;
+            &::after{
+                display: none;
+            }
+        }
+        p{
+            color: $white;
+            font-family: $font-family-gil-lt;
+            font-size: 34px;
+            line-height: 42px;
+            text-align: left;
+        }
+        .nacc{
+            color: $white;
+            font-family: $font-family-gil-rg;
+            font-size: 24px;
+            line-height: 42px;
+            text-align: left;
+            margin-top: 40px;
+            span{
+                color: $yellow;
+                font-family: $font-family-osans;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+    .enquire{
+        padding: 34px 0 24px;
+    }
+}
+
+.program{
+    @include pos-relative();
+    &::after{
+        content: "";
+        background: $gray;
+        position:absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 50%;
+        z-index: -1;
+    }
+    ul{
+        @include unorederd-list();
+        li{
+            color: $darkgray;
+            font-size: 14px;
+            font-family: $font-family-gil-rg;
+            line-height: 18px;
+            text-align: left;
+            padding-left: 24px;
+            margin-bottom: 15px;
+            @include pos-relative();
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &::before{
+                content: "";
+                background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: 3px;
+            }
+        }
+    }
+    .pr-overview{
+        @include valign-top();
+        padding-right: 20px;
+        @include border-box();
+        h2{
+
+        }
+        p{
+            color: $darkgray;
+            font-size: 14px;
+            font-family: $font-family-gil-rg;
+            line-height: 24px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .bold-text{            
+            font-family: $font-family-gil-bd;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        ul{            
+            li{  
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .pr-highlight{
+        @include valign-top();
+        padding-left: 10px;
+        background: $gray;
+        padding: 65px 0 65px 60px;
+        @include border-box();
+        h3{
+            font-size: 24px;
+            font-family: $font-family-gil-bd;
+            font-weight: normal;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 30px;
+            @include pos-relative();
+            &::after{
+                content: "";
+                position: absolute;
+                top: -18px;
+                left: 0;
+                background: transparent url("../img/big-plus-sign.png") scroll no-repeat top left;
+                height: 28px;
+                width: 28px;   
+                margin-left: 212px;                             
+            }
+        }
+        ul{            
+            li{   
+                margin-bottom: 18px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
 .rank {
+    padding: 75px 0;
     .di-block {
         @include valign-middle();
         padding: 0px 10px;
@@ -35,6 +266,40 @@
             }
         }
     }
+    .rank-carousel{
+        .box{
+            padding: 20px 10px;
+            .r-box {
+                min-height: 180px;
+                padding: 14px;
+                background: $white;
+                @include border-radius(5px);
+                // -webkit-box-shadow: 0px 0px 19.44px 4.56px rgba(0, 0, 0, .05);
+                // box-shadow: 0px 0px 19.44px 4.56px rgba(0, 0, 0, .05);
+                -webkit-box-shadow: 0px 0px 12.44px 3.56px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 0px 12.44px 3.56px rgba(0, 0, 0, 0.05);
+                .thumbnail {
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto 20px;
+                    text-align: center;
+                    @include pos-relative();
+                    img {
+                        @include vertical-center();
+                    }
+                }
+                p {
+                    color: $lightblack;
+                    font-family: $font-family-gil-lt;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    min-height: 55px;
+                }
+            }
+        }        
+    }
+    
 }
 
 
@@ -110,7 +375,7 @@
             font-family: $font-family-gil-bd;
             font-size: 18px;            
             text-align: left;
-            font-weight: 600;
+            font-weight: normal;
             line-height: 30px;
             &:first-child {
                 font-size: 36px;
@@ -163,26 +428,27 @@ footer{
         color: $lightgray;
         font-family: $font-family-gil-lt;
         font-size: 14px;
-        text-align: left;
+        // text-align: left;
+        text-align: center;
     }
-    .social-icons{
-        text-align: right;
-        li{ 
-            @include di-block();
-            @include valign-middle();
-            margin-right: 14px;
-            span{
-                color: $lightgray;
-                font-family: $font-family-gil-lt;
-                font-size: 14px;
-                text-align: left;
-            }
-            a{ 
-                @include di-block();
-                @include valign-middle();
-            }
-        }
-    }
+    // .social-icons{
+    //     text-align: right;
+    //     li{ 
+    //         @include di-block();
+    //         @include valign-middle();
+    //         margin-right: 14px;
+    //         span{
+    //             color: $lightgray;
+    //             font-family: $font-family-gil-lt;
+    //             font-size: 14px;
+    //             text-align: left;
+    //         }
+    //         a{ 
+    //             @include di-block();
+    //             @include valign-middle();
+    //         }
+    //     }
+    // }
     
 }
 

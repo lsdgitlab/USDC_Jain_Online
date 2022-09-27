@@ -25,6 +25,12 @@
     border-radius: $radius;
 }
 
+@mixin unorederd-list {
+    padding: 0;
+    margin: 0;
+    list-style: outside none none;
+}
+
 @mixin f-0{ 
     font-size: 0;
 }

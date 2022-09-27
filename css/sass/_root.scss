@@ -3,6 +3,7 @@
     --#{$variable-prefix}font-monospace: #{inspect($font-family-monospace)};
     --#{$variable-prefix}font-fantasy:#{inspect($font-family-fantasy)};
     --#{$variable-prefix}font-heebo: #{inspect($font-family-heebo)};
+    --#{$variable-prefix}font-opensans: #{inspect($font-family-opensans)};
 
     --#{$variable-prefix}bd-font-family: #{$font-family-base};
     --#{$variable-prefix}bd-font-size: #{$font-size};

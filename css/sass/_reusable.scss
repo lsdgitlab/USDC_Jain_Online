@@ -208,7 +208,38 @@ p {
 .w-25{
     width: 25%;
 }
+
+//owl carousel common css
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $darkblue;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 7px;
+    height: 7px;
+    margin: 5px 5px;
+    background: $yellow;
+}
 .owl-carousel .owl-item img {
     max-width: 100%;
     width: auto;
+}
+
+@media only screen and (max-width:1199px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    h1, h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    h2{
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
 }
