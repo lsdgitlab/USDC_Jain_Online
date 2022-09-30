@@ -89,19 +89,23 @@ li {
 }
 
 ::-webkit-input-placeholder {
-    color: #000
+    color: $black-gray;
+    opacity: 1;
 }
 
 ::-moz-placeholder {
-    color: #000
+    color: $black-gray;
+    opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: #000
+    color: $black-gray;
+    opacity: 1;
 }
 
 :-moz-placeholder {
-    color: #000
+    color: $black-gray;
+    opacity: 1;
 }
 
 body {
@@ -121,7 +125,10 @@ body {
     // box-sizing: border-box
     @include border-box();
 }
-
+.container-1180{ 
+    max-width: 1180px; 
+    margin: 0 auto;
+}
 h1{    
     font-family: $font-family-base;
     // font-family: $font-family-cursive;       
