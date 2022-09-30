@@ -226,7 +226,7 @@ p {
   width: auto;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1460px) {
   .container {
     padding: 0 15px;
   }
@@ -353,6 +353,7 @@ header .di-block .tel span {
 }
 
 .program {
+  margin: 0 0 75px;
   position: relative;
 }
 .program::after {
@@ -517,6 +518,203 @@ header .di-block .tel span {
   min-height: 55px;
 }
 
+.mba {
+  background: #09648b;
+  padding-top: 50px;
+}
+.mba h2 {
+  text-align: center;
+  color: #fff;
+}
+.mba h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -148px;
+}
+.mba .tab-section .cat-list li {
+  display: inline-block;
+  font-size: initial;
+  vertical-align: top;
+  color: #fff;
+  font-family: var(--pr-font-gilroyregular);
+  font-size: 16px;
+  text-align: center;
+}
+.mba .tab-section .content-area .accord-content {
+  display: none;
+  background: transparent;
+  padding: 60px 10px;
+}
+.mba .tab-section .content-area .accord-content.current {
+  display: inherit;
+}
+.mba .tab-section .content-area .accord-content .accord {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mba .tab-section .content-area .accord-content .accord .accordbx {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle {
+  padding: 11px 25px 11px 0px;
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle::before, .mba .tab-section .content-area .accord-content .accord .accordtitle::after {
+  content: "";
+  background: #ffcc29;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle::before {
+  width: 12px;
+  height: 2px;
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle::after {
+  width: 2px;
+  height: 12px;
+  right: 30px;
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle.active::after {
+  display: none;
+}
+.mba .tab-section .content-area .accord-content .accord .accordtitle p {
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0 50px 0 0;
+  margin: 0px;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc {
+  padding: 10px 60px 30px 0px;
+  display: none;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc p {
+  font-size: 14px;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc ul {
+  padding: 0;
+  margin: 0;
+  list-style: outside none none;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc ul li {
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroyregular);
+  line-height: 18px;
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc ul li:last-child {
+  margin-bottom: 0;
+}
+.mba .tab-section .content-area .accord-content .accord .accorddesc ul li::before {
+  content: "";
+  background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 3px;
+}
+
+.learner .container-1180 {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 70px 0;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.07);
+}
+.learner h2 {
+  text-align: center;
+}
+.learner h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -158px;
+}
+.learner .learner-carousel {
+  max-width: 980px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+.learner .learner-carousel .owl-dots {
+  position: absolute;
+  width: auto;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  /* left: 420px; */
+  margin-left: -55px;
+}
+.learner .learner-carousel .di-block {
+  vertical-align: top;
+}
+.learner .learner-carousel .di-block:first-child {
+  width: 37.3%;
+}
+.learner .learner-carousel .di-block:nth-child(2) {
+  width: 62.7%;
+}
+.learner .learner-carousel .di-block .thumbnail {
+  border: 6px solid #cccccc;
+  box-sizing: border-box;
+}
+.learner .learner-carousel .di-block .learner-text {
+  padding-left: 55px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.learner .learner-carousel .di-block .learner-text p {
+  color: #232937;
+  font-family: var(--pr-font-gilroyregular);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 30px;
+  position: relative;
+}
+.learner .learner-carousel .di-block .learner-text p:first-child {
+  padding: 85px 0 35px;
+}
+.learner .learner-carousel .di-block .learner-text p:first-child::before {
+  content: "";
+  background: transparent url("../img/quote.png") scroll no-repeat top left;
+  position: absolute;
+  left: -3px;
+  top: -5px;
+  width: 76px;
+  height: 60px;
+}
+.learner .learner-carousel .di-block .learner-text .learner-name {
+  margin-bottom: 15px;
+}
+.learner .learner-carousel .di-block .learner-text .learner-name strong {
+  display: block;
+  color: #232937;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+.learner .learner-carousel .di-block .learner-text .learner-name span.course-name {
+  display: block;
+  color: #232937;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
 .corporate {
   padding: 75px 0 10px;
 }
@@ -676,6 +874,29 @@ footer p {
   .program .pr-highlight {
     padding: 35px 20px;
   }
+  .learner .learner-carousel .owl-dots {
+    position: relative;
+    width: 100%;
+    left: 10px;
+    bottom: auto;
+    transform: none;
+    margin-left: 0;
+    text-align: left;
+  }
+  .learner .learner-carousel .di-block:first-child {
+    width: 100%;
+  }
+  .learner .learner-carousel .di-block:nth-child(2) {
+    width: 100%;
+  }
+  .learner .learner-carousel .di-block .thumbnail {
+    max-width: 304px;
+    margin: 0 auto;
+  }
+  .learner .learner-carousel .di-block .learner-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .corporate {
     padding: 50px 0 0;
   }
@@ -761,6 +982,31 @@ footer p {
   }
   .rank .di-block .r-box p {
     min-height: auto;
+  }
+  .mba h2::after {
+    margin-left: -110px;
+  }
+  .learner .container-1180 {
+    padding: 40px 0;
+  }
+  .learner h2::after {
+    margin-left: -118px;
+  }
+  .learner .learner-carousel {
+    padding-top: 20px;
+  }
+  .learner .learner-carousel .di-block .thumbnail {
+    margin-bottom: 30px;
+  }
+  .learner .learner-carousel .di-block .learner-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .learner .learner-carousel .di-block .learner-text p:first-child {
+    padding: 80px 0 25px;
+  }
+  .learner .learner-carousel .di-block .learner-name {
+    margin-bottom: 20px;
   }
   .about .highlight {
     padding-left: 18px;
