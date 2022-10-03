@@ -47,6 +47,39 @@ header{
     }
 }
 
+.enquire-now {
+    display: none;
+    width: 37px;
+    height: 124px;
+    margin-top: 270px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: $darkyellow;
+    color: $blue;
+    padding: 14px 8px;
+    border-radius: 5px 0 0 5px;
+    @include border-box();
+    a{
+        display: block;
+        span {
+            color: $blue;
+            font-family: $font-family-gil-rg;
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            writing-mode: vertical-rl;
+            cursor: pointer;
+        }
+    }
+    
+}
 .top-banner{
     background: $darkblue;
     // background: $darkblue url("../img/top-banner.png") scroll no-repeat top left;
@@ -56,7 +89,7 @@ header{
     // background-position: 52% 0;
     background-position-x: 51.4%;
     height: 100%;
-    padding-top: 100px;    
+    padding-top: 97px;    
     .di-block{
         @include valign-top();
         &:first-child{
@@ -89,6 +122,7 @@ header{
         h1{
             color: #fff;
             @include pos-relative();
+            margin: 0;
             &::after{
                 content: "";
                 position: absolute;
@@ -132,49 +166,55 @@ header{
     }
     .enquire{
         padding: 34px 0 24px;
-        .form-wrapper{
-            background: $white;
-            @include border-radius(5px);
-            padding: 27px;
-            p{
-                color: $darkgray;
-                font-family: $font-family-gil-rg; 
-                font-size: 24px;
-                font-weight: normal;
-                text-align: left;
-                margin-bottom: 24px;
-            }
-            .input-group{
-                margin-bottom: 12px;
-            }
-            input[type="text"], select{
-                color: $black-gray;
-                background: $white;   
-                border: 1px solid $white-gary; 
-                font-family: $font-family-gil-rg; 
-                font-weight: normal;
-                text-transform: capitalize;
-                padding: 5px 18px;           
-                height: 38px;
-                width: 100%;
-                @include border-box();
-            }
-            input[type="submit"]{
-                margin-top: 15px;
-                margin-bottom: 7px;
-                background: $navyblue;                
-                color: $white;
-                font-size: 14px;
-                font-family: $font-family-gil-rg; 
-                font-weight: normal;
+        .f-wrapper{
+            .form-wrapper{
+                background: $white;
                 @include border-radius(5px);
-                max-width: 280px;
-                width: 100%;
-                height: 38px;
-                border-color: $navyblue;
-                text-transform: uppercase;
+                padding: 27px;
+                p{
+                    color: $darkgray;
+                    font-family: $font-family-gil-rg; 
+                    font-size: 24px;
+                    font-weight: normal;
+                    text-align: left;
+                    margin-bottom: 24px;
+                }
+                .input-group{
+                    margin-bottom: 12px;
+                }
+                input[type="text"], select{
+                    @include appearance();
+                    color: $black-gray;
+                    background: $white;   
+                    border: 1px solid $white-gary; 
+                    font-family: $font-family-gil-rg; 
+                    font-size: 12px;
+                    font-weight: normal;
+                    text-transform: capitalize;
+                    padding: 3px 18px;           
+                    height: 38px;
+                    width: 100%;
+                    @include border-box();
+                }
+                input[type="submit"]{
+                    @include appearance();
+                    color: $white;                   
+                    background: $navyblue; 
+                    border-color: $navyblue;
+                    font-size: 14px;
+                    font-family: $font-family-gil-rg; 
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    @include border-radius(5px);
+                    max-width: 280px;
+                    width: 100%;
+                    height: 38px;
+                    margin-top: 15px;
+                    margin-bottom: 7px;                    
+                }
             }
         }
+        
         .hashtag{
             color: $white;
             font-family: $font-family-gil-bd;
@@ -201,7 +241,7 @@ header{
         z-index: -1;
     }
     ul{
-        @include unorederd-list();
+        @include unordered-list();
         li{
             color: $darkgray;
             font-size: 14px;
@@ -239,7 +279,7 @@ header{
             font-family: $font-family-gil-rg;
             line-height: 24px;
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .bold-text{            
             font-family: $font-family-gil-bd;
@@ -254,6 +294,32 @@ header{
                 }
             }
         }
+        .eligibility{
+            background: $darkblue;
+            padding: 22px 25px;
+            h2{
+                color: $darkyellow;
+                font-family: $font-family-gil-bd;  
+                font-size: 24px;
+                line-height: 28px;                
+                font-weight: normal;
+                text-align: left; 
+                margin-bottom: 0;
+                &::after{
+                    display: none;
+                }
+            }
+            p{
+                color: $white;
+                font-size: 14px;
+                font-family: $font-family-gil-rg;
+                text-align: left;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
     }
     .pr-highlight{
         @include valign-top();
@@ -282,7 +348,7 @@ header{
         }
         ul{            
             li{   
-                margin-bottom: 18px;
+                margin-bottom: 38px;
                 &:last-child{
                     margin-bottom: 0;
                 }
@@ -376,6 +442,14 @@ header{
         .cat-list{
             margin: 0 10px;
             // background: pink;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            overflow: hidden;
+            overflow-x: auto;
             li{
                 @include di-block();
                 @include valign-top();
@@ -384,8 +458,12 @@ header{
                 font-size: 16px;
                 text-align: center;
                 padding: 11px 12px;
-                margin-right: 6.83%;
+                // margin-right: 6.83%;
+                width: 100%;
                 @include border-radius(5px);
+                &:first-child {
+                    min-width: 188px;
+                }
                 &:last-child{
                     margin-right: 0;
                 }
@@ -458,7 +536,7 @@ header{
                             font-size: 14px;
                         }
                         ul{
-                            @include unorederd-list();
+                            @include unordered-list();
                             li{
                                 color: $white;
                                 font-size: 14px;

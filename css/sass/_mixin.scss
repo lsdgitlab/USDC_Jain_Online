@@ -1,9 +1,7 @@
-@mixin cf() {
-    &::after {
-        display: block;
-        clear: both;
-        content: "";
-    }
+@mixin appearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
 }
 
 @mixin transition {
@@ -12,6 +10,14 @@
     -o-transition: all 0.5s ease-in;
     -ms-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
+}
+
+@mixin cf() {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
 }
 
 @mixin border-box {
@@ -25,7 +31,7 @@
     border-radius: $radius;
 }
 
-@mixin unorederd-list {
+@mixin unordered-list {
     padding: 0;
     margin: 0;
     list-style: outside none none;
@@ -59,3 +65,4 @@
 @mixin pos-relative {
     position: relative;
 }
+
