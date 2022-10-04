@@ -168,16 +168,16 @@ h2 {
     padding-bottom: 18px;
     margin-top: 0;
     margin-bottom: 30px;
-    position: relative;
-
+    position: relative;       
     &::after {
         content: "";
-        background: #f8bf01;
+        background: $darkyellows;
         height: 3px;
         width: 45px;
         position: absolute;
         left: 0;
         bottom: 0;
+        animation: border-LeftToRight 3s infinite;
     }
 }
 
