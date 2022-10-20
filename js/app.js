@@ -7,13 +7,21 @@ $(".rank-carousel.owl-carousel").owlCarousel({
     responsiveClass:true,responsive:{0:{items:1,touchDrag:true,nav:false,dots:true},600:{items:2,touchDrag:true,nav:false,dots:true},768:{items:3,touchDrag:true,nav:false,dots:true},800:{items:3,touchDrag:true,nav:false,dots:true},992:{items:4}}
 })
 
-$(".learner-carousel.owl-carousel").owlCarousel({
-    margin:10, nav:false,
+// $(".learner-carousel.owl-carousel").owlCarousel({
+//     margin:0, nav:false,
+//     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
+//     dots:true,mouseDrag:true,touchDrag:true,
+//     autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
+//     // navContainer: '.top-highlights .custom-nav',
+//     responsiveClass:true,responsive:{0:{items:1},768:{items:1},992:{items:1}}}); 
+
+$(".learners-carousel.owl-carousel").owlCarousel({
+    margin:0, nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:true,mouseDrag:true,touchDrag:true,
-    autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
+    // autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
     // navContainer: '.top-highlights .custom-nav',
-    responsiveClass:true,responsive:{0:{items:1},768:{items:1},992:{items:1}}});    
+    responsiveClass:true,responsive:{0:{items:1},768:{items:2},768:{items:2},992:{items:3}}});    
 
 $(".corporate-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,

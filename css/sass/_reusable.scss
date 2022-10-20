@@ -175,7 +175,9 @@ h2 {
         height: 3px;
         width: 45px;
         position: absolute;
-        left: 0;
+        // left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 0;
         animation: border-LeftToRight 3s infinite;
     }
