@@ -294,9 +294,9 @@
     .corporate{
         // padding: 50px 0 0;
         h2 {
-            &::after{
-                margin-left: -90px;
-            }
+            // &::after{
+            //     margin-left: -90px;
+            // }
         }
     }
 
@@ -326,9 +326,9 @@
     
     .gray{
         h2 {
-            &::after{
-                margin-left: -70px;
-            }
+            // &::after{
+            //     margin-left: -70px;
+            // }
         }
         .accredit-carousel{
             .owl-item{
@@ -337,6 +337,10 @@
                 }
             }
         }
+    }
+
+    footer{
+        margin-bottom: 75px;
     }
      
 
@@ -551,23 +555,26 @@
 
     .mba{
         h2{
-            &::after{               
-                margin-left: -110px;
-            }
+            // &::after{               
+            //     margin-left: -110px;
+            // }
         }
     }
 
     .learner{
-        .container-1180{
-            padding: 40px 0;
-        }
+        // .container-1180{
+        //     padding: 40px 0;
+        // }
         h2{
-            &::after{
-                margin-left: -118px;
-            }
+            // &::after{
+            //     margin-left: -118px;
+            // }
         }
+        
         .learner-carousel{
             padding-top: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
             .di-block{
                 .thumbnail{
                     margin-bottom: 30px;
@@ -656,35 +663,35 @@
 
     .mba {
         h2{
-            &::after {
-                margin-left: -90px;
-            }
+            // &::after {
+            //     margin-left: -90px;
+            // }
         }
         
     }
 
     .learner{
         h2{
-            &::after{
-                margin-left: -100px;
-            }
+            // &::after{
+            //     margin-left: -100px;
+            // }
         }
     }
 
     .corporate {
         h2{
-            &::after {
-                margin-left: -75px;
-            }
+            // &::after {
+            //     margin-left: -75px;
+            // }
         }
         
     }
 
     .gray {
         h2{
-            &::after {
-                margin-left: -55px;
-            }
+            // &::after {
+            //     margin-left: -55px;
+            // }
         }
         
     }

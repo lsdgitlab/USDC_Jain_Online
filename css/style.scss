@@ -702,7 +702,7 @@ header{
             .accord-content {
                 display: none;
                 background: transparent;
-                padding: 60px 10px;    
+                padding: 60px 10px 80px;    
                 &.current {
                     display: inherit;
                 }
@@ -795,17 +795,17 @@ header{
 
 .learner{  
     @include pos-relative();
-    padding-top: 80px;
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 80px;
-        // background: #09648b;
-        background: $darkblue;
-      } 
+    // padding-top: 80px;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     height: 80px;
+    //     // background: #09648b;
+    //     background: $darkblue;
+    //   } 
     // .container-1180{ 
     //     background: $white;
     //     padding: 70px 0;        
@@ -1015,8 +1015,17 @@ header{
         margin-bottom: 25px;
         &:nth-child(1){
             padding: 0 30px 0 80px;
+            .para{
+                font-size: 16px;
+                color: #000;
+                font-family: $font-family-gil-rg;
+            }
             p{
                 // max-width: 373px;
+                font-size: 16px;
+                color: #000;
+                font-family: $font-family-gil-rg;
+                
             }
         }
         &:nth-child(2){
@@ -1139,5 +1148,88 @@ footer{
     
 }
 
+.sticky{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    // background: linear-gradient(90deg,#FFA23F 0%,#F8C000 100%);
+    background: linear-gradient(49deg,rgb(250,182,21) 0%,rgb(255,204,41) 100%);
+//     background-image: -moz-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
+//   background-image: -webkit-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
+//   background-image: -ms-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
+    z-index: 4;
+
+    ul{        
+        li{
+            @include di-block();
+            vertical-align: top;
+            width: 33.33%;
+            font-size: initial;
+            text-align: center;    
+            @include pos-relative();
+            &:nth-child(2)::before, &:nth-child(2)::after{
+                content: "";
+                position: absolute;
+                top:0;
+                background: $white;
+                height: 100%;
+                width: 1px;
+            }
+            &:nth-child(2)::before{
+                left: 0;
+            }
+            &:nth-child(2)::after{
+                right: 0;
+            }
+            a{
+                display: block;
+                color: $white;
+                font-family: $font-family-gil-rg;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 14px 10px 10px;
+                text-transform: capitalize;
+                span{
+                    &:first-child{
+                        height: 24px;
+                        display: block;
+                        margin-bottom: 6px;
+                    }                    
+
+
+                }
+            }
+        }
+    }
+}
+
+#text {
+    display: none;
+    font-size: 16px;
+    color: #000;
+    font-family: $font-family-gil-rg;
+}
+
+.btn-container {
+    margin: auto;
+    height: 44px;
+    width: 166.23px;
+}
+
+button#toggle {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    color: $darkblue;
+    font-family: $font-family-gil-rg;
+    margin-top: 10px;
+    display: block;
+}
 
 @import "sass/media";
