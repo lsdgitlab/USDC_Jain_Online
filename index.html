@@ -101,7 +101,7 @@
                     <p class="hashtag">#ItAllAddsUp</p>
                 </div>
                 <div class="f-wrapper" id="enquireNow">
-                    <div class="form-wrapper">
+                    <!-- <div class="form-wrapper">
                         <p>Enquire Now</p>
                         <form name="enquire-form" method="post" action="">
                             <div class="input-group">
@@ -135,8 +135,57 @@
                             <input type="submit" name="submit" value="Submit" id="submit">
 
                         </form>
-                    </div>
-                    
+                    </div> -->
+                    <div class="form-wrapper form-container">  
+                        <form name="myForm" id="form" action="#" method="post">
+                          <p>Enquire Now</p>
+                          <div class="form-control" id="name">
+                            <input type="text" id="fname" class="inputVal" required name="name">
+                            <label>Name</label>
+                            <b class="formerror" id=""></b>
+                          </div>
+                  
+                         <div class="form-control" id="mobile">
+                            <input type="text" id="mblno" class="inputVal" required  name="mobile">
+                            <label>Mobile Number</label>
+                            <b class="formerror"></b>
+                          </div>
+                  
+                           <div class="form-control" id="email">
+                            <input type="text" id="emailid" class="inputVal" required name="email">
+                            <label>Email</label>
+                            <b class="formerror"></b>
+                          </div>
+                  
+                          <div class="form-control" id="proDrpdwn">
+                            <select name="" name="drpdwn" id="prodrpdwn">
+                              <option value="Select Pragram">Select Pragram</option>
+                              <option value="Pragram 1">Pragram 1</option>
+                              <option value="Pragram 2">Pragram 2</option>
+                              <option value="Pragram 3">Pragram 3</option>
+                            </select> 
+                            <b class="formerror"></b>
+                            
+                          </div>
+                  
+                          <div class="form-control" id="cityDrpdwn">
+                            <select name="" name="drpdwn" id="citydrpdwn">
+                              <option value="Select City"> Select City</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Delhi">Delhi</option>
+                              <option value="Chennai">Chennai</option>
+                            </select>   
+                            <b class="formerror"></b>        
+                          </div>
+                  
+                          <div class="form-control">
+                            <input type="submit"  id="enq" name="submit" value="Submit" >                     
+                           
+                          </div>
+                                 
+                        </form>
+                        </div>
+                   
                 </div>
 
                 <p class="hashtag vis-desk">#ItAllAddsUp</p>
@@ -277,7 +326,20 @@
     <div class="program-overview">
         <div class="container f-0">
             <h2>Program Overview</h2>
-            <p>An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.</p>
+            <!-- <p>An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.</p> -->
+            <div class="info">
+                <span class="para">An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning </span>
+                
+                <!-- <span> -->
+                    <span id="ov-text1" class="more">
+                        potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.
+                    </span>
+                <!-- </span> -->
+
+                <button id="toggle1" class="toggle">Read More</button>
+            </div>
+            
+                
 
             <div class="di-block w-50 pr-highlight">
                 <div class="white-box highlight">
@@ -699,17 +761,16 @@
                 <!-- <h2>About Us</h2> -->
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. </p> -->
                 <!-- <p>We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University), Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is the superpower that can transform our lives and the future of the nation. The University functions under the wing of JAIN Group, an established education provider and entrepreneurship incubator with 30 years of credibility. Staying true to its vision, the University lays equal importance to education, entrepreneurship, research, and sports attracting thousands of students from India and worldwide every year to pursue their higher education.</p> -->
-                <span class="para">We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University), Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is the superpower that can transform our lives and the future of the nation. The University functions under the wing of JAIN Group, an established education provider and entrepreneurship incubator with 30 years of credibility. Staying true to its vision, the University &nbsp;</span>
+                <span class="para">We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University), Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is the superpower that can transform our lives and the future of the nation. The University functions under the wing of JAIN Group, an established education provider and entrepreneurship incubator with 30 years of credibility. Staying true to its vision, the University </span>
 
-                <span>
-                   <span id="text">
-                    lays equal importance to education, entrepreneurship, research, and sports attracting thousands of students from India and worldwide every year to pursue their higher education.<br><br>
+                <!-- <span> -->
+                   <span id="text" class="more">lays equal importance to education, entrepreneurship, research, and sports attracting thousands of students from India and worldwide every year to pursue their higher education.<br><br>
 Online degree programs are gaining immense popularity worldwide due to the freedom it allows learners to obtain a higher education degree from the comfort of their homes without compromising the quality of education or its outcomes.<br><br>
 At JAIN Online, we strive towards empowering our learners with the latest knowledge and skills in various industry domains to help design their professional lives efficiently. Our academic programs cater to learners from diverse proficiency levels and career goals and show them the most efficient and convenient way of achieving their aspirations. Our academic programs can serve as the perfect upskilling option for both novice and experienced.
                     </span>
-                </span>
+                <!-- </span> -->
                   
-                  <button id="toggle">Read More</button>
+                  <button id="toggle" class="toggle">Read More</button>
                   
             </div>
             <div class="di-block w-50">

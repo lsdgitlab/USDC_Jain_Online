@@ -249,6 +249,15 @@ p {
     width: 25%;
 }
 
+.more{
+    display: none;
+    font-size: 14px;
+    text-align: left;
+    color: $darkgray;
+    font-family: $font-family-gil-rg;
+    @include transition();
+}
+
 //owl carousel common css
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 5px;
@@ -300,6 +309,11 @@ p {
     h2 {
         margin-bottom: 20px;
         padding-bottom: 15px;
+    }
+
+    .more{
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 

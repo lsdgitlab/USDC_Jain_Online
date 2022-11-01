@@ -19,9 +19,9 @@ $(".learners-carousel.owl-carousel").owlCarousel({
     margin:0, nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:true,mouseDrag:true,touchDrag:true,
-    // autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
+    autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
     // navContainer: '.top-highlights .custom-nav',
-    responsiveClass:true,responsive:{0:{items:1},768:{items:2},768:{items:2},992:{items:3}}});    
+    responsiveClass:true,responsive:{0:{items:1,autoHeight: true},768:{items:2, autoHeight: false},992:{items:3}}});    
 
 $(".corporate-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,
@@ -99,17 +99,158 @@ $('.enquire-now a').click(function(){
 
 
 $(document).ready(function() {
-    $("#toggle").click(function() {
-      var elem = $("#toggle").text();
+   //  $("#toggle").click(function() {
+   //    var elem = $("#toggle").text();
+   //    if (elem == "Read More") {
+   //      //Stuff to do when btn is in the read more state
+   //      $("#toggle").text("Read Less");
+   //      $("#text").slideDown();
+   //    } else {
+   //      //Stuff to do when btn is in the read less state
+   //      $("#toggle").text("Read More");
+   //      $("#text").slideUp();
+   //    }
+   //  });
+
+   $(".toggle").click(function() {
+      $(this).prev().toggle();
+      var elem = $(this).text();
+      
       if (elem == "Read More") {
         //Stuff to do when btn is in the read more state
-        $("#toggle").text("Read Less");
-        $("#text").slideDown();
+        $(elem).text("Read Less");
       } else {
         //Stuff to do when btn is in the read less state
-        $("#toggle").text("Read More");
-        $("#text").slideUp();
+        $(elem).text("Read More");
       }
     });
+
   });
+
+  // form validation
+  const labels = document.querySelectorAll('.form-control label');
+  labels.forEach( inptlabel =>{
+          
+          inptlabel.innerHTML = inptlabel.innerText
+                  .split('')
+                   .map( (letters, ind) => `<span style="transition-delay:${ind * 50}ms">${letters}</span>`)
+                  .join('')
+          // console.log(inptlabel); 
+  });
+  
+  // Method 1
+  
+  let form = document.getElementById('form'); 
+  let fanme = document.getElementById('fname');
+  let mobile = document.getElementById('mblno');
+  let email = document.getElementById('emailid');
+  var ctselInx = document.getElementById('citydrpdwn')
+  var prselInx = document.getElementById('prodrpdwn')
+  
+  
+  form.addEventListener('click', (eve)=>{
+      eve.preventDefault();
+      checkInputs();  
+      
+  });
+  
+  form.addEventListener('input', (e)=>{
+          e.preventDefault()
+        inputType();
+  });
+  
+  function inputType(){
+          
+  }
+  
+  
+  
+  function checkInputs() {
+          const fanmeVal = fanme.value.trim();
+          const mobileVal = mobile.value.trim();
+          const emailVal = email.value.trim();
+          var ctselInxVal = ctselInx.value;        
+          var prselInxVal = prselInx.value;
+          fanme.addEventListener("keyup", (e)=>{
+           //    console.log("test");
+           var char = /[0-9]/gi;
+           if(/[0-9]/gi){
+              fanme.value = fanme.value.replace(char, "");
+              setErrorFor(fanme, 'Please Enter Letters Only')  
+           }   
+        })
+       if(fanmeVal === '' || fanmeVal.length <= 2){
+          setErrorFor(fanme, 'Please Enter The First Name')
+       } else{
+          setSuccessFor(fanme)
+       }
+  
+       if(mobileVal === '' || mobileVal.length < 10){
+        setErrorFor(mobile, 'Please Enter valid Mobile Number')
+        } else{
+           setSuccessFor(mobile)
+        } 
+  
+     mobile.addEventListener("keyup", (e)=>{
+     //    console.log("test");
+     var num = /[a-zA-Z]/gi;
+     if(/[a-zA-Z]/gi){
+        mobile.value = mobile.value.replace(num, "");
+        setErrorFor(mobile, 'Please Enter Numbers Only')  
+     }
+  
+     //    // var char = String.fromCharCode(e.which)
+     //    // if(!(/[0-9]/.test(char))){
+     //    //    setErrorFor(mobile, 'Number')
+     //    //    e.preventDefault
+     //    // }
+     })
+  
+       if(emailVal === ''){
+          setErrorFor(email, 'Blank mail ID')
+       } else if(!validateEmail(emailVal)){
+          setErrorFor(email, 'Please Enter valid Email Id')
+       } else{
+          setSuccessFor(email)
+       } 
+       
+       if(prselInxVal == "Select Pragram"){
+          // console.log("Programm ==>");
+          setErrorFor(prselInx, 'Please The Programme')
+       } else{
+          setSuccessFor(prselInx)
+       }
+       if(ctselInxVal == "Select City"){
+          setErrorFor(ctselInx, 'Please Select The City');
+          // console.log("CIty ==>");
+       }else{
+          setSuccessFor(ctselInx)
+       }
+  
+  }
+  
+  function setErrorFor(input, msg) {
+     const formCntrl = input.parentElement;
+     const bElement = formCntrl.querySelector('b');
+  //    console.log(bElement);
+     bElement.innerText = msg;
+     formCntrl.children[0].classList.add('errorbg');
+  }
+  
+  function setSuccessFor(input){
+     const formCntrl = input.parentElement;
+     const bElement = formCntrl.querySelector('b');
+     bElement.innerText = '';
+     formCntrl.children[0].classList.remove('errorbg')
+  
+  }
+  
+  const validateEmail = (email1) => {
+     return String(email1)
+       .toLowerCase()
+       .match(
+         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+       );
+  };
+
  

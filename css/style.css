@@ -227,6 +227,15 @@ p {
   width: 25%;
 }
 
+.more {
+  display: none;
+  font-size: 14px;
+  text-align: left;
+  color: #232937;
+  font-family: var(--pr-font-gilroyregular);
+  transition: all 0.5s ease-in;
+}
+
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 5px;
 }
@@ -270,6 +279,10 @@ h2 {
   h2 {
     margin-bottom: 20px;
     padding-bottom: 15px;
+  }
+  .more {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -748,6 +761,48 @@ header .di-block .tel:hover span {
   border: 1px solid #ffcc29;
   transition: all 0.5s ease-in;
 }
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control {
+  position: relative;
+  margin-bottom: 12px;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input.errorbg {
+  background: #fcccd4 !important;
+  border: solid 1px red !important;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  pointer-events: none;
+  font-family: var(--pr-font-gilroyregular);
+  font-size: 12px;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control label span {
+  display: inline-block;
+  font-size: 12px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #7a7a7a;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control .formerror {
+  color: red;
+  font-family: var(--pr-font-gilroyregular);
+  font-size: 12px;
+  font-weight: normal;
+  left: 0;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control .errorbg {
+  background: #fcccd4 !important;
+  border: solid 1px red !important;
+}
+.top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:focus + .input-desc {
+  cursor: default;
+  width: 265px;
+  box-shadow: 0 2px 5px #aaa;
+  animation: desc 0.3s;
+  -moz-animation: desc 0.3s;
+  -webkit-animation: desc 0.3s;
+}
 .top-banner .enquire .hashtag {
   color: #fff;
   font-family: var(--pr-font-gilroybold);
@@ -775,6 +830,25 @@ header .di-block .tel:hover span {
   line-height: 24px;
   text-align: left;
   margin-bottom: 30px;
+}
+.program-overview .info {
+  margin-bottom: 30px;
+}
+.program-overview .info .para {
+  color: #232937;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroyregular);
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.program-overview .info .more {
+  display: inline;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.program-overview .info .toggle {
+  display: none;
 }
 .program-overview ul {
   padding: 0;
@@ -1178,14 +1252,15 @@ header .di-block .tel:hover span {
 .about .di-block:nth-child(1) {
   padding: 0 30px 0 80px;
 }
-.about .di-block:nth-child(1) .para {
+.about .di-block:nth-child(1) .para, .about .di-block:nth-child(1) .more {
   font-size: 16px;
-  color: #000;
+  color: #232937;
   font-family: var(--pr-font-gilroyregular);
+  line-height: 30px;
 }
 .about .di-block:nth-child(1) p {
   font-size: 16px;
-  color: #000;
+  color: #232937;
   font-family: var(--pr-font-gilroyregular);
 }
 .about .di-block:nth-child(2) {
@@ -1271,11 +1346,11 @@ header .di-block .tel:hover span {
 }
 
 footer {
-  background: #232937;
+  background: #232a4c;
   padding: 30px 0;
 }
 footer p {
-  color: #efffff;
+  color: rgba(239, 255, 255, 0.6);
   font-family: var(--pr-font-gilroylight);
   font-size: 14px;
   text-align: center;
@@ -1314,7 +1389,7 @@ footer p {
 }
 .sticky ul li a {
   display: block;
-  color: #fff;
+  color: #000;
   font-family: var(--pr-font-gilroyregular);
   font-size: 14px;
   font-weight: normal;
@@ -1327,20 +1402,13 @@ footer p {
   margin-bottom: 6px;
 }
 
-#text {
-  display: none;
-  font-size: 16px;
-  color: #000;
-  font-family: var(--pr-font-gilroyregular);
-}
-
 .btn-container {
   margin: auto;
   height: 44px;
   width: 166.23px;
 }
 
-button#toggle {
+.toggle {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1353,6 +1421,7 @@ button#toggle {
   font-family: var(--pr-font-gilroyregular);
   margin-top: 10px;
   display: block;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1462px) {
@@ -1365,9 +1434,9 @@ button#toggle {
     min-height: 355px;
   }
 }
-@media only screen and (max-width: 1202px) {
-  .learner .learners-carousel .item .learner-text {
-    min-height: 380px;
+@media only screen and (max-width: 1190px) {
+  .about .highlight {
+    min-height: 140px;
   }
 }
 @media only screen and (max-width: 1087px) {
@@ -1375,39 +1444,14 @@ button#toggle {
     min-height: 403px;
   }
 }
-@media only screen and (max-width: 1020px) {
-  .learner .learners-carousel .item .learner-text {
-    min-height: 430px;
-  }
-}
 @media only screen and (max-width: 1034px) {
   .program-overview .white-box {
     min-height: 494px;
   }
 }
-@media only screen and (max-width: 950px) {
-  .program-overview .white-box {
-    min-height: 512px;
-  }
-}
-@media only screen and (max-width: 914px) {
-  .program-overview .white-box {
-    min-height: 530px;
-  }
-}
-@media only screen and (max-width: 871px) {
-  .program-overview .white-box {
-    min-height: 548px;
-  }
-}
-@media only screen and (max-width: 808px) {
-  .program-overview .white-box {
-    min-height: 584px;
-  }
-}
-@media only screen and (max-width: 1190px) {
-  .about .highlight {
-    min-height: 140px;
+@media only screen and (max-width: 1020px) {
+  .learner .learners-carousel .item .learner-text {
+    min-height: 430px;
   }
 }
 @media only screen and (max-width: 1005px) {
@@ -1435,7 +1479,8 @@ button#toggle {
   .top-banner .text-box {
     padding: 10% 0 2%;
   }
-  .top-banner .text-box h1, .top-banner .text-box h2 {
+  .top-banner .text-box h1,
+.top-banner .text-box h2 {
     text-align: center;
   }
   .top-banner .text-box h1::after {
@@ -1515,7 +1560,8 @@ button#toggle {
   .program .container {
     padding: 0;
   }
-  .program .pr-overview, .program .pr-highlight {
+  .program .pr-overview,
+.program .pr-highlight {
     width: 100%;
   }
   .program .pr-overview {
@@ -1529,31 +1575,16 @@ button#toggle {
   .program .pr-highlight ul li {
     margin-bottom: 20px;
   }
+  .program-overview .info .more {
+    display: none;
+    line-height: 24px;
+  }
+  .program-overview .info .toggle {
+    display: block;
+    margin: 20px auto 0;
+  }
   .learner .learners-container {
     padding: 50px 0;
-  }
-  .learner .learner-carousel .owl-dots {
-    position: relative;
-    width: 100%;
-    left: 10px;
-    bottom: auto;
-    transform: none;
-    margin-left: 0;
-    text-align: left;
-  }
-  .learner .learner-carousel .di-block:first-child {
-    width: 100%;
-  }
-  .learner .learner-carousel .di-block:nth-child(2) {
-    width: 100%;
-  }
-  .learner .learner-carousel .di-block .thumbnail {
-    max-width: 304px;
-    margin: 0 auto;
-  }
-  .learner .learner-carousel .di-block .learner-text {
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .learner .learners-carousel .item .learner-text {
     min-height: 330px;
@@ -1583,9 +1614,24 @@ button#toggle {
     margin-bottom: 75px;
   }
 }
+@media only screen and (max-width: 950px) {
+  .program-overview .white-box {
+    min-height: 512px;
+  }
+}
+@media only screen and (max-width: 914px) {
+  .program-overview .white-box {
+    min-height: 530px;
+  }
+}
 @media only screen and (max-width: 886px) {
   .learner .learners-carousel .item .learner-text {
     min-height: 355px;
+  }
+}
+@media only screen and (max-width: 871px) {
+  .program-overview .white-box {
+    min-height: 548px;
   }
 }
 @media only screen and (max-width: 834px) {
@@ -1594,6 +1640,11 @@ button#toggle {
   }
   .learner .learners-carousel .item .learner-text {
     min-height: 380px;
+  }
+}
+@media only screen and (max-width: 808px) {
+  .program-overview .white-box {
+    min-height: 584px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1611,7 +1662,8 @@ button#toggle {
     min-height: auto;
     margin-bottom: 25px;
   }
-  .program-overview .pr-overview, .program-overview .pr-highlight {
+  .program-overview .pr-overview,
+.program-overview .pr-highlight {
     width: 100%;
     padding: 0;
   }
@@ -1644,7 +1696,8 @@ button#toggle {
   .top-banner {
     padding-top: 76px;
   }
-  .top-banner .text-box h1, .top-banner .text-box h2 {
+  .top-banner .text-box h1,
+.top-banner .text-box h2 {
     font-size: 24px;
     line-height: 38px;
   }
@@ -1709,23 +1762,28 @@ button#toggle {
     line-height: 28px;
     margin-bottom: 25px;
   }
-  .learner .learner-carousel {
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+  .learner h2 {
+    margin-bottom: 0;
   }
-  .learner .learner-carousel .di-block .thumbnail {
+  .learner .learners-carousel {
+    padding: 0 15px;
+  }
+  .learner .learners-carousel .item .learner-text p:first-child::before {
+    left: -20px;
+  }
+  .about h2 {
     margin-bottom: 30px;
   }
-  .learner .learner-carousel .di-block .learner-text p {
+  .about .di-block:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .about .di-block:nth-child(1) .para,
+.about .di-block:nth-child(1) .more {
     font-size: 14px;
     line-height: 24px;
   }
-  .learner .learner-carousel .di-block .learner-text p:first-child {
-    padding: 80px 0 25px;
-  }
-  .learner .learner-carousel .di-block .learner-name {
-    margin-bottom: 20px;
+  .about .di-block:nth-child(1) .toggle {
+    margin: 30px auto 0;
   }
   .about .highlight {
     padding-left: 18px;
