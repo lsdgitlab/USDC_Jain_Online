@@ -1,12 +1,24 @@
 @media only screen and (max-width:1462px) {
-    .learner .learners-carousel .item .learner-text {
-        min-height: 330px;
+    .learner {
+        .learners-carousel {
+            .item {
+                .learner-text {
+                    min-height: 330px;
+                }
+            }
+        }
     }
 }
 
 @media only screen and (max-width:1279px) {
-    .learner .learners-carousel .item .learner-text {
-        min-height: 355px;
+    .learner {
+        .learners-carousel {
+            .item {
+                .learner-text {
+                    min-height: 355px;
+                }
+            }
+        }
     }
 }
 
@@ -21,8 +33,14 @@
 }
 
 @media only screen and (max-width:1087px) {
-    .learner .learners-carousel .item .learner-text {
-        min-height: 403px;
+    .learner {
+        .learners-carousel {
+            .item {
+                .learner-text {
+                    min-height: 403px;
+                }
+            }
+        }
     }
 }
 
@@ -38,8 +56,15 @@
 @media only screen and (max-width:1023px) {}
 
 @media only screen and (max-width:1020px) {
-    .learner .learners-carousel .item .learner-text {
-        min-height: 430px;
+    .learner {
+        .learners-carousel {
+            .item {
+                .learner-text {
+                    min-height: 430px;
+                }
+            }
+        }
+
     }
 }
 
@@ -199,38 +224,38 @@
         }
     }
 
-    .program {
-        margin-bottom: 0;
+    // .program {
+    //     margin-bottom: 0;
 
-        &::after {
-            background: transparent;
-        }
+    //     &::after {
+    //         background: transparent;
+    //     }
 
-        .container {
-            padding: 0;
-        }
+    //     .container {
+    //         padding: 0;
+    //     }
 
-        .pr-overview,
-        .pr-highlight {
-            width: 100%;
-        }
+    //     .pr-overview,
+    //     .pr-highlight {
+    //         width: 100%;
+    //     }
 
-        .pr-overview {
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-bottom: 30px;
-        }
+    //     .pr-overview {
+    //         padding-left: 20px;
+    //         padding-right: 20px;
+    //         margin-bottom: 30px;
+    //     }
 
-        .pr-highlight {
-            padding: 35px 20px 40px;
+    //     .pr-highlight {
+    //         padding: 35px 20px 40px;
 
-            ul {
-                li {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
+    //         ul {
+    //             li {
+    //                 margin-bottom: 20px;
+    //             }
+    //         }
+    //     }
+    // }
 
     .program-overview {
         .info {
@@ -502,6 +527,8 @@
             h1 {
                 &::after {
                     margin-left: 110px;
+                    background-size: 17px 16px;
+                    top: 0;
                 }
             }
 
@@ -580,16 +607,24 @@
     .program {}
 
     .program-overview {
+        .heading {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
         .white-box {
-            padding: 40px;
+            padding: 40px 18px;
+            &::after{
+                top: -8px;
+                left: -4px;
+            }
         }
 
         .pr-overview {
             .eligibility {
                 h3 {
-                    font-size: 20px;
-                    line-height: 28px;
-                    margin-bottom: 25px;
+                    @extend .heading;
                 }
             }
         }
@@ -597,9 +632,7 @@
         .pr-highlight {
             .highlight {
                 h3 {
-                    font-size: 20px;
-                    line-height: 28px;
-                    margin-bottom: 25px;
+                    @extend .heading;
                 }
             }
         }

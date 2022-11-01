@@ -103,24 +103,10 @@ li {
     @include cf();
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
     color: $black-gray;
     opacity: 1;
-}
-
-::-moz-placeholder {
-    color: $black-gray;
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    color: $black-gray;
-    opacity: 1;
-}
-
-:-moz-placeholder {
-    color: $black-gray;
-    opacity: 1;
+    font-family: $font-family-gil-rg;
 }
 
 body {
