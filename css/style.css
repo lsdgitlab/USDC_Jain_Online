@@ -222,6 +222,30 @@ p {
   transition: all 0.5s ease-in;
 }
 
+.pointer-list li {
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroyregular);
+  line-height: 18px;
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.pointer-list li:last-child {
+  margin-bottom: 0;
+}
+.pointer-list li::before {
+  content: "";
+  background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 2px;
+}
+
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 5px;
 }
@@ -259,7 +283,7 @@ p {
 @media only screen and (max-width: 575px) {
   h1,
 h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 30px;
   }
   h2 {
@@ -485,7 +509,7 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 11;
+  z-index: 1013;
 }
 header .di-block {
   vertical-align: middle;
@@ -530,7 +554,7 @@ header .di-block .tel:hover span {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 9;
+  z-index: 1012;
   background: #ffcc29;
   color: #00205c;
   border-radius: 5px 0 0 5px;
@@ -997,7 +1021,6 @@ header .di-block .tel:hover span {
   box-shadow: 0px 0px 12.44px 3.56px rgba(0, 0, 0, 0.05);
 }
 .rank .rank-carousel .box .r-box .thumbnail {
-  width: 80px;
   height: 80px;
   margin: 0 auto 20px;
   text-align: center;
@@ -1041,6 +1064,7 @@ header .di-block .tel:hover span {
   display: inline-block;
   font-size: initial;
   vertical-align: top;
+  cursor: pointer;
   color: #fff;
   font-family: var(--pr-font-gilroyregular);
   font-size: 16px;
@@ -1075,6 +1099,7 @@ header .di-block .tel:hover span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .mba .tab-section .content-area .accord-content .accord .accordtitle {
+  cursor: pointer;
   padding: 11px 25px 11px 0px;
   color: #fff;
   font-family: var(--pr-font-gilroybold);
@@ -1488,6 +1513,11 @@ footer p {
   margin-left: 273px;
 }
 
+.online {
+  margin-top: -16px;
+  position: relative;
+  z-index: 1011;
+}
 .online h2 {
   color: #232937;
   font-size: 30px;
@@ -1500,6 +1530,124 @@ footer p {
 }
 .online h2::after {
   display: none;
+}
+.online .tabbed-content {
+  background-color: #fff;
+  box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
+  padding: 0;
+  margin: 0 auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.online .tabbed-content .tabs {
+  display: none;
+}
+.online .tabbed-content .tabs ul {
+  margin: 0;
+  padding: 0 0 24px 0;
+}
+.online .tabbed-content .tabs ul li {
+  background: #fff;
+}
+.online .tabbed-content .tabs ul li a {
+  padding: 13px 10px;
+  color: #232937;
+  font-family: var(--pr-font-gilroylight);
+  font-weight: 400;
+  text-align: center;
+}
+.online .tabbed-content .tabs ul li a:hover, .online .tabbed-content .tabs ul li a.active {
+  background: #00205c;
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+}
+.online .tabbed-content .tab-item {
+  min-height: 2em;
+}
+.online .tabbed-content .tab-item::before {
+  content: attr(data-title);
+  cursor: pointer;
+  font-weight: bold;
+  background: #fff;
+  color: #232937;
+  font-family: var(--pr-font-gilroylight);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 22px;
+  display: block;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.online .tabbed-content .tab-item .item-content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+.online .tabbed-content .tab-item .item-content h3 {
+  color: #232937;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: var(--pr-font-gilroyregular);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.online .tabbed-content .tab-item .item-content p, .online .tabbed-content .tab-item .item-content span {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 0 30px;
+  font-family: var(--pr-font-gilroyregular);
+  font-weight: 400;
+  text-align: left;
+}
+.online .tabbed-content .tab-item.active::before {
+  background: #00205c;
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+}
+.online .tabbed-content .tab-item.active .item-content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  padding: 25px 20px 50px;
+  transition: opacity 0.3s ease-in-out;
+}
+@media all and (min-width: 992px) {
+  .online .tabbed-content {
+    padding: 0 36px;
+  }
+  .online .tabbed-content .tabs {
+    display: block;
+  }
+  .online .tabbed-content .tabs li {
+    display: inline-block;
+    min-width: 132px;
+  }
+  .online .tabbed-content .tabs li a {
+    display: block;
+  }
+  .online .tabbed-content .tab-item {
+    min-height: 0;
+  }
+  .online .tabbed-content .tab-item .item-content h3 {
+    margin-bottom: 25px;
+  }
+  .online .tabbed-content .tab-item::before {
+    display: none;
+  }
+  .online .tabbed-content .tab-item.active .item-content {
+    padding: 25px 0;
+  }
+}
+.online .pointer-list li {
+  color: #232937;
+  font-size: 14px;
+}
+
+.program-learner .learners-container {
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 1462px) {
@@ -1555,7 +1703,8 @@ footer p {
     padding-top: 0;
   }
   .top-banner .text-box {
-    padding: 10% 0 2%;
+    padding: 4% 0 2%;
+    background-image: none;
   }
   .top-banner .text-box h1,
 .top-banner .text-box h2 {
@@ -1606,7 +1755,6 @@ footer p {
   .top-banner .enquire .f-wrapper {
     background: #fff;
     padding: 0 15px 5px;
-    margin-top: -24px;
     position: relative;
     z-index: 1;
   }
@@ -1666,6 +1814,17 @@ footer p {
   }
   footer {
     margin-bottom: 75px;
+  }
+  .top-banner-prdetail .text-box h1::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .top-banner-prdetail .enquire .f-wrapper {
+    margin-top: 0;
+  }
+  .online .tabbed-content .tab-item .item-content .toggle {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -1753,7 +1912,7 @@ footer p {
   .top-banner .text-box h1,
 .top-banner .text-box h2 {
     font-size: 24px;
-    line-height: 38px;
+    line-height: 30px;
   }
   .top-banner .text-box h1::after {
     margin-left: 110px;
@@ -1863,6 +2022,10 @@ footer p {
   }
   .about .highlight p:first-child span {
     font-size: 30px;
+  }
+  .online h2 {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 @media only screen and (max-width: 400px) {

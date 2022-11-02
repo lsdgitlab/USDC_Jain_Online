@@ -115,7 +115,8 @@
         }
 
         .text-box {
-            padding: 10% 0 2%;
+            padding: 4% 0 2%;
+            background-image: none;
 
             h1,
             h2 {
@@ -191,7 +192,7 @@
             .f-wrapper {
                 background: #fff;
                 padding: 0 15px 5px;
-                margin-top: -24px;
+                // margin-top: -24px;
                 @include pos-relative();
                 z-index: 1;
 
@@ -375,6 +376,42 @@
     }
 
 
+    //program detail page css
+    .top-banner-prdetail{
+        .text-box{
+            h1{
+                &::before{
+                    left: 50%;
+                    transform: translateX(-50%);
+                }                
+            }
+        }
+        .enquire {
+            .f-wrapper{
+                margin-top: 0;
+            
+            }
+        }
+    }
+    .online{
+        .tabbed-content{
+            .tab-item{
+                .item-content{
+                    .toggle{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+    
+            }
+            
+        }
+    }
+
+    
+    
+
+
 }
 
 @media only screen and (max-width:950px) {
@@ -521,7 +558,7 @@
             h1,
             h2 {
                 font-size: 24px;
-                line-height: 38px;
+                line-height: 30px;
             }
 
             h1 {
@@ -759,6 +796,15 @@
     }
 
     .gray {}
+
+
+    //program detail page css
+    .online{
+        h2{
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
 
 }
 

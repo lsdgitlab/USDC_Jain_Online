@@ -1,0 +1,118 @@
+.tabbed-content {
+    background-color: #fff; /*$black*/
+    box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);    
+    padding: 0 36px;
+    margin: 1em auto;
+}
+  
+.tabs ul {
+    margin: 0;
+    padding: 0 0 24px 0;
+    font-weight: bold;
+}
+.tabs ul li {
+    background: #eee;
+}
+.tabs ul li a {
+    padding: 0.5em 1em;
+    color: #232937;
+    font-family: "Gilroy-Light";
+}
+.tabs ul li a:hover, .tabs ul li a.active {
+    background: #00205c; /*$darkblue*/
+    color: #fff; /*$white*/
+}
+
+.tab-item {
+    margin-bottom: 2px;
+}
+.tab-item::before {
+    cursor: pointer;
+    font-weight: bold;
+    background: #eee;
+    padding: 0.5em;
+    display: block;
+}
+.tab-item.active::before {
+    background: #444;
+    color: #eee;
+}
+.tab-item.active .item-content {
+    padding: 1em;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tab-item .item-content h3{
+    color: #232937;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: "Gilroy-Regular";
+    font-weight: normal;
+    text-align: left;
+}
+
+
+@media all and (min-width: 800px) {
+.tab-item.active .item-content {
+    padding-top: 0;
+}
+
+/* .tabs-side .tabs li {
+    margin-bottom: 2px;
+} */
+}
+/* 
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+.tabbed-content .tabs {
+    display: none;
+}
+.tabbed-content .tab-item {
+    min-height: 2em;
+}
+.tabbed-content .tab-item::before {
+    content: attr(data-title);
+}
+.tabbed-content .tab-item .item-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+.tabbed-content .tab-item.active .item-content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+@media all and (min-width: 800px) {
+    .tabbed-content .tabs {
+        display: block;
+    }
+    .tabbed-content .tabs li {
+        display: inline-block;
+    }
+    .tabbed-content .tabs li a {
+        display: block;
+    }
+    .tabbed-content .tab-item {
+        min-height: 0;
+    }
+    .tabbed-content .tab-item::before {
+        display: none;
+    }
+    /* .tabbed-content.tabs-side .tabs {
+        width: 150px;
+        float: left;
+    }
+    .tabbed-content.tabs-side .tabs li {
+        display: block;
+    }
+    .tabbed-content.tabs-side .item {
+        margin-left: 150px;
+    } */
+}

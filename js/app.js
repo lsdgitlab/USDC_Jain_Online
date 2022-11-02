@@ -2,7 +2,7 @@ $(".rank-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:false,mouseDrag:true, 
-    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 3000,
+    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 4000,
     // navContainer: '.top-highlights .custom-nav',
     responsiveClass:true,responsive:{0:{items:1,touchDrag:true,nav:false,dots:true},600:{items:2,touchDrag:true,nav:false,dots:true},768:{items:3,touchDrag:true,nav:false,dots:true},800:{items:3,touchDrag:true,nav:false,dots:true},992:{items:4}}
 })
@@ -19,7 +19,7 @@ $(".learners-carousel.owl-carousel").owlCarousel({
     margin:0, nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:true,mouseDrag:true,touchDrag:true,
-    autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 5500,
+    autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, smartSpeed: 4000,
     // navContainer: '.top-highlights .custom-nav',
     responsiveClass:true,responsive:{0:{items:1,autoHeight: true},768:{items:2, autoHeight: false},992:{items:3}}});    
 
@@ -27,7 +27,7 @@ $(".corporate-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:false,mouseDrag:true, 
-    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 3000,
+    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 4000,
     // navContainer: '.top-highlights .custom-nav',
     responsiveClass:true,responsive:{0:{items:2,touchDrag:true,nav:false,dots:true},480:{items:3,touchDrag:true,nav:false,dots:true},768:{items:3,touchDrag:true,nav:false,dots:true},800:{items:3,touchDrag:true,nav:false,dots:true},992:{items:5}}});    
 
@@ -35,7 +35,7 @@ $(".accredit-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
     dots:false,mouseDrag:true, smartSpeed: 2000,
-    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 3000,
+    autoplay:true, autoplayTimeout:5000, autoplayHoverPause:true, smartSpeed: 4000,
     // navContainer: '.top-highlights .custom-nav',
     responsiveClass:true,responsive:{0:{items:1,touchDrag:true,nav:false,dots:true},600:{items:3,touchDrag:true,nav:false,dots:true},768:{items:3,touchDrag:true,nav:false,dots:true},800:{items:3,touchDrag:true,nav:false,dots:true},992:{items:4}}});
 
@@ -112,18 +112,28 @@ $(document).ready(function() {
    //    }
    //  });
 
-   $(".toggle").click(function() {
-      $(this).prev().toggle();
-      var elem = $(this).text();
+  //  $(".toggle").click(function() {
+  //     $(this).prev().toggle();
+  //     var elem = $(this).text();
       
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $(elem).text("Read Less");
-      } else {
-        //Stuff to do when btn is in the read less state
-        $(elem).text("Read More");
-      }
-    });
+  //     if (elem == "Read More") {
+  //       //Stuff to do when btn is in the read more state
+  //       $(elem).text("Read Less");
+  //     } else {
+  //       //Stuff to do when btn is in the read less state
+  //       $(elem).text("Read More");
+  //     }
+  //   });
+
+  $(".toggle").click(function () {
+    $(this).prev().toggle();    
+    if ($(this).text() == 'Read More') {
+      $(this).text('Read Less');
+    }
+    else {
+      $(this).text('Read More');
+    }
+  });
 
   });
 
@@ -252,5 +262,59 @@ $(document).ready(function() {
          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
        );
   };
+
+
+//script for tabs as accordian on moible
+  tabControl();
+
+/*
+We also apply the switch when a viewport change is detected on the fly
+(e.g. when you resize the browser window or flip your device from 
+portrait mode to landscape). We set a timer with a small delay to run 
+it only once when the resizing ends. It's not perfect, but it's better
+than have it running constantly during the action of resizing.
+*/
+var resizeTimer;
+$(window).on('resize', function(e) {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    tabControl();
+  }, 250);
+});
+
+/*
+The function below is responsible for switching the tabs when clicked.
+It switches both the tabs and the accordion buttons even if 
+only the one or the other can be visible on a screen. We prefer
+that in order to have a consistent selection in case the viewport
+changes (e.g. when you esize the browser window or flip your 
+device from portrait mode to landscape).
+*/
+function tabControl() {
+  var tabs = $('.tabbed-content').find('.tabs');
+  if(tabs.is(':visible')) {
+    tabs.find('a').on('click', function(event) {
+      event.preventDefault();
+      var target = $(this).attr('href'),
+          tabs = $(this).parents('.tabs'),
+          buttons = tabs.find('a'),
+          item = tabs.parents('.tabbed-content').find('.tab-item');
+      buttons.removeClass('active');
+      item.removeClass('active');
+      $(this).addClass('active');
+      $(target).addClass('active');
+    });
+  } else {
+    $('.tab-item').on('click', function() {
+      var container = $(this).parents('.tabbed-content'),
+          currId = $(this).attr('id'),
+          items = container.find('.tab-item');
+      container.find('.tabs a').removeClass('active');
+      items.removeClass('active');
+      $(this).addClass('active');
+      container.find('.tabs a[href$="#'+ currId +'"]').addClass('active');
+    });
+  } 
+}
 
  

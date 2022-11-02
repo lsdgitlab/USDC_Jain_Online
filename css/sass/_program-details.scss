@@ -72,6 +72,9 @@
 }
 
 .online{
+    margin-top: -16px;
+    @include pos-relative();
+    z-index: 1011;
     h2{
         color: $darkgray;
         font-size: 30px;
@@ -85,4 +88,33 @@
             display: none;
         }
     }
+
+    @import "../sass/tabs";
+
+    .pointer-list li{
+        color: $darkgray;
+        font-size: 14px;
+
+    }
+    // .tabbed-content{
+    //     .tab-item{
+    //         .item-content{
+    //             .toggle{
+    //                 font-size: 14px;
+    //                 line-height: 24px;
+    //             }
+    //         }
+
+    //     }
+        
+    // }
+    
+    
+}
+
+.program-learner{
+    .learners-container{
+        padding-top: 0;
+    }
+    
 }
