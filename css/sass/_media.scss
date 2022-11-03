@@ -377,7 +377,11 @@
 
 
     //program detail page css
-    .top-banner-prdetail{
+    .innerpage{
+        margin-bottom: 50px;
+        &::after{
+            display: none;
+        }
         .text-box{
             h1{
                 &::before{
@@ -387,6 +391,15 @@
             }
         }
         .enquire {
+            .vis-mob{
+                .hashtag{
+                    position: relative;
+                    bottom: auto;
+                    right: auto;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
             .f-wrapper{
                 margin-top: 0;
             
@@ -406,6 +419,10 @@
             }
             
         }
+    }
+    
+    .listpage{
+        margin-bottom: 0;
     }
 
     
@@ -681,6 +698,13 @@
             //     margin-left: -110px;
             // }
         }
+        .tab-section {
+            .content-area {
+                .accord-content{
+                    padding: 20px 10px 48px;
+                }
+            }
+        }
     }
 
     .learner {
@@ -799,12 +823,52 @@
 
 
     //program detail page css
+    .innerpage{
+        .enquire {
+            .vis-mob {
+                .hashtag {                    
+                    position: relative;
+                    right: auto;
+                    bottom: auto;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
     .online{
         h2{
             font-size: 22px;
             line-height: 30px;
         }
     }
+
+    .faq{
+        padding: 40px 0 60px;
+        .accord{
+            .accordbx{
+                padding:  0 13px;
+                margin-bottom: 9px;
+                .accordtitle{  
+                    padding: 28px 13px 20px 0px;
+                    p{
+                        line-height: 24px;
+                        font-size: $font-size-base;
+                        line-height: 24px;
+                    }
+                }
+    
+            }
+            .accorddesc{
+                padding: 0px 0 13px;
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                
+            }
+        }
+    }
+    
 
 }
 
@@ -815,10 +879,18 @@
         .text-box {
             .features {
                 max-width: 300px;
+                margin: 30px auto 0;
 
                 .di-block {
                     max-width: 150px;
                     width: 100%;
+                    margin-bottom: 25px;
+                    &:first-child{
+                        margin-bottom: 25px;
+                    }
+                    &:nth-child(2){
+                        margin-bottom: 25px;
+                    }
 
                     img {
                         max-width: 25px;

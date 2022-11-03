@@ -1,4 +1,4 @@
-.top-banner-prdetail {
+.innerpage {
     background-image: none;
     @include pos-relative();
     &::after{
@@ -116,5 +116,80 @@
     .learners-container{
         padding-top: 0;
     }
+    
+}
+
+.prdetail-corporate{
+    padding-bottom: 65px;
+}
+
+.faq{
+    background: $gray;
+
+    @import "accordian";
+    padding: 70px 0 70px;
+
+    h2{
+        text-align: center;
+    }
+
+    .accord{
+        .accordbx{
+            background: $white;
+            padding: 0 35px 0 40px;
+            margin-bottom: 15px;
+            @include border-radius(5px);
+        }
+        .accordtitle{  
+            padding: 28px 0 24px 0px;          
+
+            &::before{
+                width: 15px;
+                height: 10px;
+                right: 8px;
+                margin-top: 3px;
+                background: transparent url("../img/down-arrow.png") scroll no-repeat right center;
+                @include transition();
+            }
+            &::after{
+                width: 32px;
+                height: 32px;
+                right: 0;
+                margin-top: 3px;
+                background: transparent;
+                border: 1px solid $color-e7;
+                @include border-radius(100%);
+            }
+            &.active{
+                &::before{
+                    transform: rotate(180deg);
+                    margin-top: -3px;
+                }
+                &::after{
+                    display: unset;
+                    
+                }
+
+            }
+            p{
+                color: $darkgray;
+                font-size: 18px;
+                font-family: $font-family-gil-bd;
+            }
+            
+            
+            
+        }
+        .accorddesc{
+            padding: 0px 0 35px;
+            p{
+                font-size: $font-size-base;
+                color: $gray-light;
+            }
+            
+        }
+    }
+    
+
     
 }

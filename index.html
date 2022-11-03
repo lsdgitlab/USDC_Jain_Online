@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="theme-color" content="#000000">
-<title>Jain Online</title>
-<link rel="canonical" href="#">
-<link rel="amphtml" href="#">
-<meta name="description" content="Jain Online">
-<meta name="keywords" content="Jain Online">
-<!-- <link rel="shortcut icon" href="images/cremica-mnemonic.ico"> -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/vendors/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/vendors/css/owl.theme.default.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-<link rel="stylesheet" href="assets/vendors/css/normalize.min.css"> 
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Jain Online - Program</title>
+    <link rel="canonical" href="#">
+    <link rel="amphtml" href="#">
+    <meta name="description" content="Jain Online">
+    <meta name="keywords" content="Jain Online">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 <body>
     <header>
@@ -31,7 +32,8 @@
                 </div>
             </div>
             <div class="di-block w-50">
-                <a href="tel:+919294939295" class="tel cf"><img src="img/phone-icon.png" alt="Logo"><span>+91 9294939295</span></a>
+                <a href="tel:+919294939295" class="tel cf"><img src="img/phone-icon.png" alt="Logo"><span>+91
+                        9294939295</span></a>
             </div>
         </div>
     </header>
@@ -42,7 +44,8 @@
         <a href="tel:+919294939295"><span><img src="img/phone-icon-receiver.png"></span></a>
     </div>
     <div class="enquire-now whapp">
-        <a href="https://api.whatsapp.com/send/?phone=919294969497&amp;text&amp;app_absent=0" target="_blank"><span><img src="img/whatsapp-icon.png"></span></a>
+        <a href="https://api.whatsapp.com/send/?phone=919294969497&amp;text&amp;app_absent=0" target="_blank"><span><img
+                    src="img/whatsapp-icon.png"></span></a>
     </div>
 
     <div class="top-banner">
@@ -89,102 +92,65 @@
 
             </div>
             <div class="di-block enquire">
-                <!-- <img src="img/form.png" alt=""> -->
                 <div class="vis-mob">
-                    <!-- <p class="hashtag">#ItAllAddsUp</p> -->
                     <img src="img/top-banner-girl-mobile.png" alt="image">
                     <p class="hashtag">#ItAllAddsUp</p>
                 </div>
                 <div class="f-wrapper" id="enquireNow">
-                    <!-- <div class="form-wrapper">
-                        <p>Enquire Now</p>
-                        <form name="enquire-form" method="post" action="">
-                            <div class="input-group">
-                                <input type="text" name="" value="" placeholder="Name">
+                    <div class="form-wrapper form-container">
+                        <form name="myForm" id="form" action="#" method="post">
+                            <p>Enquire Now</p>
+                            <div class="form-control" id="name">
+                                <input type="text" id="fname" class="inputVal" required name="name">
+                                <label>Name</label>
+                                <b class="formerror" id=""></b>
                             </div>
-                            <div class="input-group">
-                                <input type="text" name="" value="" placeholder="Mobile Number">
+
+                            <div class="form-control" id="mobile">
+                                <input type="text" id="mblno" class="inputVal" required name="mobile">
+                                <label>Mobile Number</label>
+                                <b class="formerror"></b>
                             </div>
-                            <div class="input-group">
-                                <input type="text" name="" value="" placeholder="Email">
+
+                            <div class="form-control" id="email">
+                                <input type="text" id="emailid" class="inputVal" required name="email">
+                                <label>Email</label>
+                                <b class="formerror"></b>
                             </div>
-                            <div class="input-group">
-                                <select class="select-bx">
-                                    <option value="">Select Programe</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
+
+                            <div class="form-control" id="proDrpdwn">
+                                <select name="" name="drpdwn" id="prodrpdwn">
+                                    <option value="Select Pragram">Select Pragram</option>
+                                    <option value="Pragram 1">Pragram 1</option>
+                                    <option value="Pragram 2">Pragram 2</option>
+                                    <option value="Pragram 3">Pragram 3</option>
                                 </select>
+                                <b class="formerror"></b>
+
                             </div>
-                            <div class="input-group">
-                                <select class="select-bx">
-                                    <option value="">City</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
+
+                            <div class="form-control" id="cityDrpdwn">
+                                <select name="" name="drpdwn" id="citydrpdwn">
+                                    <option value="Select City"> Select City</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Chennai">Chennai</option>
                                 </select>
+                                <b class="formerror"></b>
                             </div>
-                            
-                            <input type="submit" name="submit" value="Submit" id="submit">
+
+                            <div class="form-control">
+                                <input type="submit" id="enq" name="submit" value="Submit">
+
+                            </div>
 
                         </form>
-                    </div> -->
-                    <div class="form-wrapper form-container">  
-                        <form name="myForm" id="form" action="#" method="post">
-                          <p>Enquire Now</p>
-                          <div class="form-control" id="name">
-                            <input type="text" id="fname" class="inputVal" required name="name">
-                            <label>Name</label>
-                            <b class="formerror" id=""></b>
-                          </div>
-                  
-                         <div class="form-control" id="mobile">
-                            <input type="text" id="mblno" class="inputVal" required  name="mobile">
-                            <label>Mobile Number</label>
-                            <b class="formerror"></b>
-                          </div>
-                  
-                           <div class="form-control" id="email">
-                            <input type="text" id="emailid" class="inputVal" required name="email">
-                            <label>Email</label>
-                            <b class="formerror"></b>
-                          </div>
-                  
-                          <div class="form-control" id="proDrpdwn">
-                            <select name="" name="drpdwn" id="prodrpdwn">
-                              <option value="Select Pragram">Select Pragram</option>
-                              <option value="Pragram 1">Pragram 1</option>
-                              <option value="Pragram 2">Pragram 2</option>
-                              <option value="Pragram 3">Pragram 3</option>
-                            </select> 
-                            <b class="formerror"></b>
-                            
-                          </div>
-                  
-                          <div class="form-control" id="cityDrpdwn">
-                            <select name="" name="drpdwn" id="citydrpdwn">
-                              <option value="Select City"> Select City</option>
-                              <option value="Mumbai">Mumbai</option>
-                              <option value="Delhi">Delhi</option>
-                              <option value="Chennai">Chennai</option>
-                            </select>   
-                            <b class="formerror"></b>        
-                          </div>
-                  
-                          <div class="form-control">
-                            <input type="submit"  id="enq" name="submit" value="Submit" >                     
-                           
-                          </div>
-                                 
-                        </form>
-                        </div>
-                   
+                    </div>
+
                 </div>
 
                 <p class="hashtag vis-desk">#ItAllAddsUp</p>
-                
+
             </div>
         </div>
     </div>
@@ -192,40 +158,7 @@
     <div class="rank">
         <div class="container">
             <h2>Ranking & Recognition</h2>
-            <!-- <div class="f-0">
-                <div class="di-block w-25">
-                    <div class="r-box">
-                        <div class="thumbnail">
-                            <img src="img/ugc-logo.png" alt="image">
-                        </div>
-                        <p>JAIN (Deemed-to-be University) awarded Graded Autonomy by University Grants Commission (UGC)</p>
-                    </div>
-                </div>
-                <div class="di-block w-25">
-                    <div class="r-box">
-                        <div class="thumbnail">
-                            <img src="img/naac.png" alt="image">
-                        </div>
-                        <p>National Assessment & Accredition Council(NAAC) has awarded ‘A++; Grade</p>
-                    </div>
-                </div>
-                <div class="di-block w-25">
-                    <div class="r-box">
-                        <div class="thumbnail">
-                            <img src="img/world-university-rankings.png" alt="image">
-                        </div>
-                        <p>Ranked in Top 100 Indian Universities</p>
-                    </div>
-                </div>
-                <div class="di-block w-25">
-                    <div class="r-box">
-                        <div class="thumbnail">
-                            <img src="img/nirf.png" alt="image">
-                        </div>
-                        <p>Nationally Ranked University</p>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="owl-carousel owl-theme rank-carousel">
                 <div class="item">
                     <div class="box">
@@ -233,7 +166,8 @@
                             <div class="thumbnail">
                                 <img src="img/logo01.png" alt="image">
                             </div>
-                            <p>JAIN (Deemed-to-be University) awarded Graded Autonomy by University Grants Commission (UGC)</p>
+                            <p>JAIN (Deemed-to-be University) awarded Graded Autonomy by University Grants Commission
+                                (UGC)</p>
                         </div>
                     </div>
                 </div>
@@ -341,71 +275,42 @@
         </div>
     </div>
 
-    <!-- <div class="program">
-        <div class="container f-0">
-            <div class="di-block w-50 pr-overview">
-                <h2>Program Overview</h2>
-                <!- <p>An Online MBA is a great choice for those who wish to pursue a career in business management. This Online Degree Program opens up a plethora of career opportunities, increases your earning potential, helps you develop your management skills, and grow your professional network. As for working professionals, an Online MBA program will allow you to gain a valid MBA Degree recognized across the world, without having to take a break from your professional career, and prepare you for a managerial role.</p> ->
-
-                <!- <p class="bold-text">A two-year online degree program that offers foundation courses, and core courses, along with an option to pursue a cross-functional and open elective</p>
-                <ul>
-                    <li>Based on AICTE's model curriculum as prescribed for a full-time Online MBA Program</li>
-                    <li>Designed keeping in mind the industry requirements to provide an in-depth understanding </li>
-                    <li>Increases the learner's business knowledge and leadership skills, thus making it the best Online MBA course</li>
-                </ul> ->
-
-                <p>An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.</p>
-                <div class="eligibility">
-                    <h2>Eligibility</h2>
-                    <p>Pass in an Undergraduate (Bachelor) Program of a minimum duration of three (3) years in any stream from a UGC Recognized University, with a minimum aggregate of 50% or an equivalent letter/numerical grade. A relaxation of 5% shall be given to SC/ST candidates.</p>
-                    <p>Candidates who are in the final semester of the Bachelor's Program are also eligible to apply.</p>
-                </div>
-
-            </div>
-            <div class="di-block w-50 pr-highlight">
-                <h3>Program Highlights</h3>
-                <ul>
-                    <li>Strong foundation in the principles and practices of Finance</li>
-                    <li>Thorough understanding of advanced courses like Derivatives, Investment Banking, Financial Analytics, etc.</li>
-                    <li>Courses mirror global professional certifications in Finance like CFA, CFP, CIMA</li>
-                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                    <li>Achieve business mastery with a blend of Finance and Management courses</li>
-                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                </ul>
-            </div>
-            
-            
-        </div>
-    </div> -->
-
     <div class="program-overview">
         <div class="container f-0">
             <h2>Program Overview</h2>
-            <!-- <p>An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.</p> -->
+
             <div class="info">
-                <span class="para">An Online MBA is a two-year master’s degree program, an excellent choice for those who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our Online MBA Degree Program opens up a plethora of career opportunities, increases your earning </span>
-                
-                <!-- <span> -->
-                    <span id="ov-text1" class="more">
-                        potential, and helps you develop your management skills and grow your professional network. As for working professionals, Online MBA courses allow them to upskill and pursue the degree while working. It prepares them for managerial and corporate roles enabling them to learn the best business practices and the necessary strategic and leadership skills, thus making it the best Online MBA course.
-                    </span>
-                <!-- </span> -->
+                <span class="para">An Online MBA is a two-year master’s degree program, an excellent choice for those
+                    who wish to pursue a career in business and management. Based on AICTE’S model curriculum, our
+                    Online MBA Degree Program opens up a plethora of career opportunities, increases your earning
+                </span>
+
+                <span id="ov-text1" class="more">
+                    potential, and helps you develop your management skills and grow your professional network. As for
+                    working professionals, Online MBA courses allow them to upskill and pursue the degree while working.
+                    It prepares them for managerial and corporate roles enabling them to learn the best business
+                    practices and the necessary strategic and leadership skills, thus making it the best Online MBA
+                    course.
+                </span>
 
                 <button id="toggle1" class="toggle">Read More</button>
             </div>
-            
-                
+
+
 
             <div class="di-block w-50 pr-highlight">
                 <div class="white-box highlight">
                     <h3 class="heading">Program Highlights</h3>
                     <ul>
                         <li>Strong foundation in the principles and practices of Finance</li>
-                        <li>Thorough understanding of advanced courses like Derivatives, Investment Banking, Financial Analytics, etc.</li>
+                        <li>Thorough understanding of advanced courses like Derivatives, Investment Banking, Financial
+                            Analytics, etc.</li>
                         <li>Courses mirror global professional certifications in Finance like CFA, CFP, CIMA</li>
-                        <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
+                        <li>Industry aligned curriculum that delivers technical excellence and supplements professional
+                            skills</li>
                         <li>Achieve business mastery with a blend of Finance and Management courses</li>
-                        <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
+                        <li>Analyze problems and propose actions in real-world situations as part of the master thesis
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -413,20 +318,20 @@
             <div class="di-block w-50 pr-overview">
                 <div class="white-box eligibility">
                     <h3 class="heading">Eligibility</h2>
-                    <!-- <p>Pass in an Undergraduate (Bachelor) Program of a minimum duration of three (3) years in any stream from a UGC Recognized University, with a minimum aggregate of 50% or an equivalent letter/numerical grade. A relaxation of 5% shall be given to SC/ST candidates.</p>
-                    <p>Candidates who are in the final semester of the Bachelor's Program are also eligible to apply.</p> -->
-
-                    <p>Pass in an Undergraduate (Bachelor) Program of a minimum duration of three (3) years in any stream from a UGC Recognized University, with a minimum  aggregate of 50% or an equivalent letter/numerical grade. A relaxation of 5% shall be given to SC/ST candidates.</p>
-                    <p>Candidates who are in the final semester of the Bachelor's Program are also eligible to apply.</p>
+                        <p>Pass in an Undergraduate (Bachelor) Program of a minimum duration of three (3) years in any
+                            stream from a UGC Recognized University, with a minimum aggregate of 50% or an equivalent
+                            letter/numerical grade. A relaxation of 5% shall be given to SC/ST candidates.</p>
+                        <p>Candidates who are in the final semester of the Bachelor's Program are also eligible to
+                            apply.</p>
                 </div>
 
             </div>
-            
-            
-            
+
+
+
         </div>
     </div>
-    
+
     <div class="mba">
         <div class="container">
             <h2>Online MBA Electives</h2>
@@ -439,340 +344,387 @@
                     <li data-tab="tab-5">Business</li>
                     <li data-tab="tab-6">Operations</li>
                     <li data-tab="tab-7">Media</li>
-                  </ul>
-                <div class="content-area">                    
+                </ul>
+                <div class="content-area">
                     <div class="accord-content current" id="tab-1">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Finance</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Strong foundation in the principles and practices of Finance</li>
-                                    <li>Thorough understanding of advanced courses like Derivatives, Investment Banking, Financial Analytics, etc.</li>
-                                    <li>Courses mirror global professional certifications in Finance like CFA, CFP, CIMA</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a blend of Finance and Management courses</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
-                              </div>
+                                <div class="accordtitle">
+                                    <p>Finance</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Strong foundation in the principles and practices of Finance</li>
+                                        <li>Thorough understanding of advanced courses like Derivatives, Investment
+                                            Banking, Financial Analytics, etc.</li>
+                                        <li>Courses mirror global professional certifications in Finance like CFA, CFP,
+                                            CIMA</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of Finance and Management courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>International Finance</p>
+                                    <p>International Finance</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                    <li>India’s Only online accredited program that provides the highest level of exemptions towards ACCA professional qualification</li>
-                                    <li>P-Level courses including essentials and the mandatory two courses of the options (P1 to P6) are also incorporated into the curriculum</li>      
-                                    <li>More than 7400 ACCA approved employers worldwide</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a blend of Accounting, Finance and Management courses</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
+                                    <ul>
+                                        <li>India’s Only online accredited program that provides the highest level of
+                                            exemptions towards ACCA professional qualification</li>
+                                        <li>P-Level courses including essentials and the mandatory two courses of the
+                                            options (P1 to P6) are also incorporated into the curriculum</li>
+                                        <li>More than 7400 ACCA approved employers worldwide</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of Accounting, Finance and Management
+                                            courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
-                              <div class="accordbx">
+                            </div>
+                            <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Banking & Finance</p>
+                                    <p>Banking & Finance</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Hands-on lab exercises on Learning Management System (LMS) with the latest inputs in Banking and Finance areas</li>
-                                      <li>Thorough understanding of advanced courses like Forex Management, Depositories, Risk Management, etc.</li>
-                                      <li>Support from a pool of decision-making experts with thorough Industry knowledge coupled with business domain expertise</li>
-                                      <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                      <li>Achieve business mastery with a blend of Banking, Finance and Management courses</li>
-                                      <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Hands-on lab exercises on Learning Management System (LMS) with the latest
+                                            inputs in Banking and Finance areas</li>
+                                        <li>Thorough understanding of advanced courses like Forex Management,
+                                            Depositories, Risk Management, etc.</li>
+                                        <li>Support from a pool of decision-making experts with thorough Industry
+                                            knowledge coupled with business domain expertise</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of Banking, Finance and Management
+                                            courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
-                              <div class="accordbx">
+                            </div>
+                            <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Finance and Leadership</p>
+                                    <p>Finance and Leadership</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Only Online Accredited Program that provides an exemption of 14 papers (OTQ) of all 4 Levels – Certificate, Operational, Management and Strategic Level</li>
-                                      <li>Understanding of the 2 case study exams at management and strategic level</li>
-                                      <li>Ability to analyze statistics to spot trends and help make strategic decisions from improving internal efficiencies to tackling market expansion</li>
-                                      <li>Access to more than 15,000 new accounting, finance and business jobs</li>
-                                      <li>Develop skillset to combine financial and non-financial data, to paint a complete picture of the business</li>
-                                      <li>A host of skill enhancement and ability enhancement courses in addition to core courses</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Only Online Accredited Program that provides an exemption of 14 papers (OTQ)
+                                            of all 4 Levels – Certificate, Operational, Management and Strategic Level
+                                        </li>
+                                        <li>Understanding of the 2 case study exams at management and strategic level
+                                        </li>
+                                        <li>Ability to analyze statistics to spot trends and help make strategic
+                                            decisions from improving internal efficiencies to tackling market expansion
+                                        </li>
+                                        <li>Access to more than 15,000 new accounting, finance and business jobs</li>
+                                        <li>Develop skillset to combine financial and non-financial data, to paint a
+                                            complete picture of the business</li>
+                                        <li>A host of skill enhancement and ability enhancement courses in addition to
+                                            core courses</li>
+                                    </ul>
                                 </div>
-                              </div>
-                              <div class="accordbx">
+                            </div>
+                            <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Accounting and Finance</p>
+                                    <p>Accounting and Finance</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Strong foundation in the principles and practices of Accounting and Finance</li>
-                                      <li>Thorough understanding of advanced courses like Forensic Accounting, FinTech, IFRS, etc.</li>
-                                      <li>Courses mirror national and global professional certifications and qualifications in Accounting and Finance</li>
-                                      <li>A blend of accounting, finance and management courses</li>
-                                      <li>Industry designed curriculum that delivers technical excellence and supplements professional skills</li>
-                                      <li>A host of skill enhancement and ability enhancement courses in addition to core courses</li>
+                                    <ul>
+                                        <li>Strong foundation in the principles and practices of Accounting and Finance
+                                        </li>
+                                        <li>Thorough understanding of advanced courses like Forensic Accounting,
+                                            FinTech, IFRS, etc.</li>
+                                        <li>Courses mirror national and global professional certifications and
+                                            qualifications in Accounting and Finance</li>
+                                        <li>A blend of accounting, finance and management courses</li>
+                                        <li>Industry designed curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>A host of skill enhancement and ability enhancement courses in addition to
+                                            core courses</li>
                                 </div>
-                              </div>
-                              <div class="accordbx">
+                            </div>
+                            <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>International Finance and Accounting</p>
+                                    <p>International Finance and Accounting</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>A host of skill enhancement and ability enhancement courses in addition to core courses</li>
-                                      <li>P-Level courses including essentials and the mandatory two courses of the options (P1 to P6) are also incorporated into the curriculum</li>
-                                      <li>More than 7400 ACCA approved employers worldwide</li>
-                                      <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                      <li>Achieve business mastery with a blend of Accounting, Finance and Management courses</li>
-                                      <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                  </ul>
+                                    <ul>
+                                        <li>A host of skill enhancement and ability enhancement courses in addition to
+                                            core courses</li>
+                                        <li>P-Level courses including essentials and the mandatory two courses of the
+                                            options (P1 to P6) are also incorporated into the curriculum</li>
+                                        <li>More than 7400 ACCA approved employers worldwide</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of Accounting, Finance and Management
+                                            courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-2">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Marketing</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Strong foundation in the principles and practices of marketing</li>
-                                    <li>Thorough understanding with advanced courses like Integrated MarComm, Digital Marketing, Marketing Analytics etc.</li>
-                                    <li>Enhanced understanding of digital and social media strategies for intelligent marketing</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a blend of marketing and management courses</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
-                              </div>
+                                <div class="accordtitle">
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Strong foundation in the principles and practices of marketing</li>
+                                        <li>Thorough understanding with advanced courses like Integrated MarComm,
+                                            Digital Marketing, Marketing Analytics etc.</li>
+                                        <li>Enhanced understanding of digital and social media strategies for
+                                            intelligent marketing</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of marketing and management courses
+                                        </li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>International Marketing (Accredited by CIM, UK)</p>
+                                    <p>International Marketing (Accredited by CIM, UK)</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Access to a range of benefits across 4Cs: Career, Capability, Community and Content</li>
-                                      <li>Offers a range of professionally recognized Marketing and Digital Marketing qualifications designed to develop core skills needed for modern marketers</li>
-                                      <li>A blend of marketing and management courses</li>
-                                      <li>The marketing content maps against unique professional marketing competencies – a framework of skills and behaviours required of today’s professional marketer
-                                      <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                      <li>Analyze problems and propose actions in real-world situations as part of the project work </li>
-                                  </ul>
+                                    <ul>
+                                        <li>Access to a range of benefits across 4Cs: Career, Capability, Community and
+                                            Content</li>
+                                        <li>Offers a range of professionally recognized Marketing and Digital Marketing
+                                            qualifications designed to develop core skills needed for modern marketers
+                                        </li>
+                                        <li>A blend of marketing and management courses</li>
+                                        <li>The marketing content maps against unique professional marketing
+                                            competencies – a framework of skills and behaviours required of today’s
+                                            professional marketer
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            project work </li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-3">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Human Resource Management</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Strong foundation in the principles and practices of HRM</li>
-                                    <li>Thorough understanding of advanced courses like HR Metrics and Analytics, OD and Change Management etc.</li>
-                                    <li>Spread of courses for HR generalist and HR specialist roles</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a blend of HR and Management courses</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
-                              </div>
-                            </div>                            
+                                <div class="accordtitle">
+                                    <p>Human Resource Management</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Strong foundation in the principles and practices of HRM</li>
+                                        <li>Thorough understanding of advanced courses like HR Metrics and Analytics, OD
+                                            and Change Management etc.</li>
+                                        <li>Spread of courses for HR generalist and HR specialist roles</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of HR and Management courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-4">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Business Intelligence and Analytics (Accredited by IoA, UK)</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>This elective enables students to develop advanced technical and analytical skills to leverage Business Intelligence and Machine learning in business</li>
-                                    <li>The students will be exposed to different strategic implications of applying Business Intelligence and Analytical techniques to support the decision-making process in an organization</li>
-                                    <li>Students will learn and practically implement programming languages and technology applications to develop analysis and solutions to address the needs of an organization and its stakeholders</li>
-                                    <li>The curriculum is developed meticulously and trains the students exhaustively in the study of BI and Analytics domains such as Database Systems, Machine Learning, Python, R, Web Data Extraction and Analytics, Business Intelligence Reporting and Dashboarding, etc.</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
-                              </div>
+                                <div class="accordtitle">
+                                    <p>Business Intelligence and Analytics (Accredited by IoA, UK)</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>This elective enables students to develop advanced technical and analytical
+                                            skills to leverage Business Intelligence and Machine learning in business
+                                        </li>
+                                        <li>The students will be exposed to different strategic implications of applying
+                                            Business Intelligence and Analytical techniques to support the
+                                            decision-making process in an organization</li>
+                                        <li>Students will learn and practically implement programming languages and
+                                            technology applications to develop analysis and solutions to address the
+                                            needs of an organization and its stakeholders</li>
+                                        <li>The curriculum is developed meticulously and trains the students
+                                            exhaustively in the study of BI and Analytics domains such as Database
+                                            Systems, Machine Learning, Python, R, Web Data Extraction and Analytics,
+                                            Business Intelligence Reporting and Dashboarding, etc.</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Business Intelligence and AI (Accredited by AI Society, UK)</p>
+                                    <p>Business Intelligence and AI (Accredited by AI Society, UK)</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                    <li>This elective aims at providing a punctilious study in the said domains.</li>
-                                    <li>The elective comprises of business study modules that include the study of Artificial Intelligence, Business Intelligence in advanced methods and problem solving such as Visual Analytics, Natural Language Processing, Machine Learning, Deep Learning, Business Applications of AI etc.</li>
-                                    <li>Master powerful AI tools and languages so as to analyse raw data, uncover hidden patterns and report the data visually.</li>
-                                   <li>Develop applicable business practices with the aid of popular BI tools such as Tableau and programming languages such as Python, SQL, R programming, etc.</li>
-                                   <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                   <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                </ul>
+                                    <ul>
+                                        <li>This elective aims at providing a punctilious study in the said domains.
+                                        </li>
+                                        <li>The elective comprises of business study modules that include the study of
+                                            Artificial Intelligence, Business Intelligence in advanced methods and
+                                            problem solving such as Visual Analytics, Natural Language Processing,
+                                            Machine Learning, Deep Learning, Business Applications of AI etc.</li>
+                                        <li>Master powerful AI tools and languages so as to analyse raw data, uncover
+                                            hidden patterns and report the data visually.</li>
+                                        <li>Develop applicable business practices with the aid of popular BI tools such
+                                            as Tableau and programming languages such as Python, SQL, R programming,
+                                            etc.</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-5">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>General Management</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Strong foundation in all critical functional areas</li>
-                                    <li>Thorough understanding of business functions through a basket of courses</li>
-                                    <li>Develop expertise in the core responsibilities of General Managers</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a blend of courses from all domain</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the Master thesis</li>
-                                </ul>
+                                <div class="accordtitle">
+                                    <p>General Management</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Strong foundation in all critical functional areas</li>
+                                        <li>Thorough understanding of business functions through a basket of courses
+                                        </li>
+                                        <li>Develop expertise in the core responsibilities of General Managers</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a blend of courses from all domain</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            Master thesis</li>
+                                    </ul>
 
-                              </div>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Entrepreneurship and Leadership</p>
+                                    <p>Entrepreneurship and Leadership</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                     <li>Strong foundation in the principles, concepts and models of entrepreneurship development</li> 
-                                     <li>Powerful experimental learning experience through Harvard Business Simulations by using real-world contexts to reinforce learning</li>
-                                     <li>Develop solid workable ideas for start-ups and rich skillsets for leadership positions in organizations</li>
-                                     <li>Opportunity to enhance leadership traits & potential in addition to gaining a fair understanding of business and financial dealings</li>
-                                     <li>Helps develop networking skills and experience to establish successful business links and build a strong foundation for new products or ideas</li>
-                                     <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Strong foundation in the principles, concepts and models of entrepreneurship
+                                            development</li>
+                                        <li>Powerful experimental learning experience through Harvard Business
+                                            Simulations by using real-world contexts to reinforce learning</li>
+                                        <li>Develop solid workable ideas for start-ups and rich skillsets for leadership
+                                            positions in organizations</li>
+                                        <li>Opportunity to enhance leadership traits & potential in addition to gaining
+                                            a fair understanding of business and financial dealings</li>
+                                        <li>Helps develop networking skills and experience to establish successful
+                                            business links and build a strong foundation for new products or ideas</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-6">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Systems and Operations Management</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Strong foundation in the concepts and practices in Systems and Operations Management</li>
-                                    <li>Thorough understanding with advanced courses like ERP, Business Intelligence, TQM, Lean & Six Sigma etc.</li>
-                                    <li>Robust perspective on applications across domains</li>
-                                    <li>Industry aligned curriculum that delivers technical excellence and supplements professional skills</li>
-                                    <li>Achieve business mastery with a unique blend of Systems, Operations and Management courses</li>
-                                    <li>Analyze problems and propose actions in real-world situations as part of the Master Thesis</li>
-                                </ul>
-                              </div>
+                                <div class="accordtitle">
+                                    <p>Systems and Operations Management</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Strong foundation in the concepts and practices in Systems and Operations
+                                            Management</li>
+                                        <li>Thorough understanding with advanced courses like ERP, Business
+                                            Intelligence, TQM, Lean & Six Sigma etc.</li>
+                                        <li>Robust perspective on applications across domains</li>
+                                        <li>Industry aligned curriculum that delivers technical excellence and
+                                            supplements professional skills</li>
+                                        <li>Achieve business mastery with a unique blend of Systems, Operations and
+                                            Management courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            Master Thesis</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Logistics and Supply Chain Management</p>
+                                    <p>Logistics and Supply Chain Management</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Strong foundation in the principles and practices of Supply Chain strategy</li>
-                                      <li>Emphasis on global supply chains and current trends in logistics</li>
-                                      <li>Learn to consider the effectiveness of emerging technologies in logistics and project management</li>
-                                      <li>Achieve business mastery with a blend of LSCM and Management courses</li>
-                                      <li>Analyze problems and propose actions in real-world situations as part of the master thesis</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Strong foundation in the principles and practices of Supply Chain strategy
+                                        </li>
+                                        <li>Emphasis on global supply chains and current trends in logistics</li>
+                                        <li>Learn to consider the effectiveness of emerging technologies in logistics
+                                            and project management</li>
+                                        <li>Achieve business mastery with a blend of LSCM and Management courses</li>
+                                        <li>Analyze problems and propose actions in real-world situations as part of the
+                                            master thesis</li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accord-content" id="tab-7">
                         <div class="accord">
                             <div class="accordbx">
-                              <div class="accordtitle">
-                                <p>Media 1</p>
-                              </div>
-                              <div class="accorddesc">
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis consequatur suscipit ratione illum molestias harum expedita eos assumenda explicabo aliquid eaque, excepturi totam accusamus voluptatem earum, dolorum et deserunt laboriosam!</li>
-                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, harum ipsam rem suscipit repellendus recusandae aspernatur velit atque ea. Tempora magnam optio hic ea omnis quaerat. Non error nostrum in!</li>
-                                </ul>
-                              </div>
+                                <div class="accordtitle">
+                                    <p>Media 1</p>
+                                </div>
+                                <div class="accorddesc">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+                                            consequatur suscipit ratione illum molestias harum expedita eos assumenda
+                                            explicabo aliquid eaque, excepturi totam accusamus voluptatem earum, dolorum
+                                            et deserunt laboriosam!</li>
+                                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, harum
+                                            ipsam rem suscipit repellendus recusandae aspernatur velit atque ea. Tempora
+                                            magnam optio hic ea omnis quaerat. Non error nostrum in!</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="accordbx">
                                 <div class="accordtitle">
-                                  <p>Media 2</p>
+                                    <p>Media 2</p>
                                 </div>
                                 <div class="accorddesc">
-                                  <ul>
-                                      <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis consequatur suscipit ratione illum molestias harum expedita eos assumenda explicabo aliquid eaque, excepturi totam accusamus voluptatem earum, dolorum et deserunt laboriosam!</li>
-                                      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, harum ipsam rem suscipit repellendus recusandae aspernatur velit atque ea. Tempora magnam optio hic ea omnis quaerat. Non error nostrum in!</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+                                            consequatur suscipit ratione illum molestias harum expedita eos assumenda
+                                            explicabo aliquid eaque, excepturi totam accusamus voluptatem earum, dolorum
+                                            et deserunt laboriosam!</li>
+                                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, harum
+                                            ipsam rem suscipit repellendus recusandae aspernatur velit atque ea. Tempora
+                                            magnam optio hic ea omnis quaerat. Non error nostrum in!</li>
+                                    </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
-                        
+
                 </div>
-                
+
             </div>
         </div>
     </div>
 
     <div class="learner">
-        <!-- <div class="container">
-            <div class="container-1180 learner-container">
-                <h2>What our learners say</h2>
-                <div class="owl-carousel owl-theme learner-carousel">
-                    <div class="item">
-                        <div class="f-0">
-                            <div class="di-block">
-                                <div class="thumbnail">
-                                    <img src="img/learner-pic-1.jpg" alt="Learner image">
-                                </div>
-                            </div>
-                            <div class="di-block">
-                                <div class="learner-text">
-                                    <p>This online learning course has made my life easier as it allows me to focus on my career while also pursuing my master’s degree. The suport team and faculty are extremely helpful and kind. I am really glad to be a part of JAIN Online. Thanks!</p>
-                                    <p class="learner-name">
-                                        <strong>Kusuma N</strong>
-                                        <span class="course-name">Master of Computer Applications</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="f-0">
-                            <div class="di-block">
-                                <div class="thumbnail">
-                                    <img src="img/learner-pic-1.jpg" alt="Learner image">
-                                </div>
-                            </div>
-                            <div class="di-block">
-                                <div class="learner-text">
-                                    <p>This online learning course has made my life easier as it allows me to focus on my career while also pursuing my master’s degree. The suport team and faculty are extremely helpful and kind. I am really glad to be a part of JAIN Online. Thanks!</p>
-                                    <p class="learner-name">
-                                        <strong>Kusuma N</strong>
-                                        <span class="course-name">Master of Computer Applications</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
-
-
-        
         <div class="learners-container">
             <h2>What our learners say</h2>
-            
+
             <div class="owl-carousel owl-theme learners-carousel">
                 <div class="item">
                     <div class="learner-text">
@@ -780,7 +732,9 @@
                             <strong>Jaspreet Kaur</strong>
                             <span class="course-name">Master of Business Administration</span>
                         </p>
-                        <p>As a working professional, I was able to study without having to worry about time constraints. It's fantastic how interactive and knowledgeable the faculty are. I am happy to be a part of JAIN Online.</p>
+                        <p>As a working professional, I was able to study without having to worry about time
+                            constraints. It's fantastic how interactive and knowledgeable the faculty are. I am happy to
+                            be a part of JAIN Online.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -789,7 +743,10 @@
                             <strong>Sankeerth S</strong>
                             <span class="course-name">Master of Business Administration</span>
                         </p>
-                        <p>The best part is that we can learn from anywhere in the world, and the recorded sessions give us confidence that we can continue to learn even if we miss a live session. So the money we spend on this Online MBA Program is well spent. I am very happy that we will receive the same degree that a student pursuing an on-campus program receives.</p>
+                        <p>The best part is that we can learn from anywhere in the world, and the recorded sessions give
+                            us confidence that we can continue to learn even if we miss a live session. So the money we
+                            spend on this Online MBA Program is well spent. I am very happy that we will receive the
+                            same degree that a student pursuing an on-campus program receives.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -798,7 +755,9 @@
                             <strong>Kumar S V</strong>
                             <span class="course-name">Master of Business Administration</span>
                         </p>
-                        <p>It is a great opportunity for me to be a part of the JAIN Online family. The well-qualified and experienced professors teach with live examples, which helps us to understand better and faster. I'm having a great time learning. Thank you to JAIN Online.</p>
+                        <p>It is a great opportunity for me to be a part of the JAIN Online family. The well-qualified
+                            and experienced professors teach with live examples, which helps us to understand better and
+                            faster. I'm having a great time learning. Thank you to JAIN Online.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -807,17 +766,19 @@
                             <strong>Kusuma N</strong>
                             <span class="course-name">Master of Computer Applications</span>
                         </p>
-                        <p>This online learning course has made my life easier as it allows me to focus on my career while also pursuing my master's degree. The support team and faculty are extremely helpful and kind. I am really glad to be a part of JAIN Online. Thanks!</p>
+                        <p>This online learning course has made my life easier as it allows me to focus on my career
+                            while also pursuing my master's degree. The support team and faculty are extremely helpful
+                            and kind. I am really glad to be a part of JAIN Online. Thanks!</p>
                     </div>
                 </div>
             </div>
         </div>
-       
+
 
 
 
     </div>
-    
+
     <div class="corporate">
         <div class="container">
             <h2>Hiring Corporates</h2>
@@ -845,67 +806,67 @@
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/HDFC.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Hector-beverages.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Hitachi.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Honeywell.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/ICICI-Bank.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
-                        <img src="img/corporates/infosys.jpg" alt="">
-                    </div>                    
-                </div>                
+                        <img src="img/corporates/infosys.png" alt="">
+                    </div>
+                </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Johnson-controls.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/kelloggs.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/kpmg.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/MTR.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/pwc.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Standard-chartered.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/corporates/Hector-beverages.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -914,22 +875,29 @@
     <div class="about">
         <h2>About Us</h2>
         <div class="container f-0">
-            
-            <div class="di-block w-50">
-                <!-- <h2>About Us</h2> -->
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. </p> -->
-                <!-- <p>We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University), Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is the superpower that can transform our lives and the future of the nation. The University functions under the wing of JAIN Group, an established education provider and entrepreneurship incubator with 30 years of credibility. Staying true to its vision, the University lays equal importance to education, entrepreneurship, research, and sports attracting thousands of students from India and worldwide every year to pursue their higher education.</p> -->
-                <span class="para">We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University), Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is the superpower that can transform our lives and the future of the nation. The University functions under the wing of JAIN Group, an established education provider and entrepreneurship incubator with 30 years of credibility. Staying true to its vision, the University </span>
 
-                <!-- <span> -->
-                   <span id="text" class="more">lays equal importance to education, entrepreneurship, research, and sports attracting thousands of students from India and worldwide every year to pursue their higher education.<br><br>
-Online degree programs are gaining immense popularity worldwide due to the freedom it allows learners to obtain a higher education degree from the comfort of their homes without compromising the quality of education or its outcomes.<br><br>
-At JAIN Online, we strive towards empowering our learners with the latest knowledge and skills in various industry domains to help design their professional lives efficiently. Our academic programs cater to learners from diverse proficiency levels and career goals and show them the most efficient and convenient way of achieving their aspirations. Our academic programs can serve as the perfect upskilling option for both novice and experienced.
-                    </span>
-                <!-- </span> -->
-                  
-                  <button id="toggle2" class="toggle">Read More</button>
-                  
+            <div class="di-block w-50">
+                <span class="para">We are JAIN Online, the e-learning platform of JAIN (Deemed-to-be University),
+                    Bangalore, founded by Dr. Chenraj Roychand, a visionary who believes without a doubt education is
+                    the superpower that can transform our lives and the future of the nation. The University functions
+                    under the wing of JAIN Group, an established education provider and entrepreneurship incubator with
+                    30 years of credibility. Staying true to its vision, the University </span>
+
+                <span id="text" class="more">lays equal importance to education, entrepreneurship, research, and sports
+                    attracting thousands of students from India and worldwide every year to pursue their higher
+                    education.<br><br>
+                    Online degree programs are gaining immense popularity worldwide due to the freedom it allows
+                    learners to obtain a higher education degree from the comfort of their homes without compromising
+                    the quality of education or its outcomes.<br><br>
+                    At JAIN Online, we strive towards empowering our learners with the latest knowledge and skills in
+                    various industry domains to help design their professional lives efficiently. Our academic programs
+                    cater to learners from diverse proficiency levels and career goals and show them the most efficient
+                    and convenient way of achieving their aspirations. Our academic programs can serve as the perfect
+                    upskilling option for both novice and experienced.
+                </span>
+
+                <button id="toggle2" class="toggle">Read More</button>
+
             </div>
             <div class="di-block w-50">
                 <div class="highlight highlight-1">
@@ -953,7 +921,7 @@ At JAIN Online, we strive towards empowering our learners with the latest knowle
         </div>
     </div>
 
-    <div class="gray">        
+    <div class="gray">
         <div class="container">
             <h2>Accredited By</h2>
             <div class="owl-carousel owl-theme accredit-carousel">
@@ -980,7 +948,7 @@ At JAIN Online, we strive towards empowering our learners with the latest knowle
                 <div class="item">
                     <div class="thumbnail">
                         <img src="img/accredit/BCS.jpg" alt="">
-                    </div>                    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="thumbnail">
@@ -997,35 +965,26 @@ At JAIN Online, we strive towards empowering our learners with the latest knowle
     </div>
 
     <footer>
-        <div class="container f-0">            
-            <!-- <p class="di-block w-50">© 2022 JAIN (Deemed-to-be University) </p>
-            <ul class="di-block social-icons w-50">
-                <li><span>Follow us:</span></li>
-                <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="img/linkedin.png" alt="Linkedin"></a></li>
-                <li><a href="#"><img src="img/youtube.png" alt="You Tube"></a></li>
-            </ul> -->
+        <div class="container f-0">
             <p class="footer-text">© 2022 JAIN (Deemed-to-be University) </p>
-            
         </div>
-        
+
     </footer>
 
     <div class="sticky vis-mob">
         <ul class="f-0">
             <li><a href="#enquireNow"><span><img src="img/icon-apply.png"></span><span>Apply Now</span></a></li>
             <li><a href="tel:+919294939295"><span><img src="img/call.png"></span><span>Call US</span></a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=919294969497&amp;text&amp;app_absent=0" target="_blank"><span><img
-                            src="img/whatsapp.png"></span><span>Whatsapp</span></a></li>
-        
+            <li><a href="https://api.whatsapp.com/send/?phone=919294969497&amp;text&amp;app_absent=0"
+                    target="_blank"><span><img src="img/whatsapp.png"></span><span>Whatsapp</span></a></li>
+
         </ul>
     </div>
-    
-    
+
+
     <script src="assets/vendors/js/jquery.min.js"></script>
     <script src="assets/vendors/js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

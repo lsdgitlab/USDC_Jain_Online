@@ -1,22 +1,33 @@
 $variable-prefix: pr- !default;
 $white: #fff;
 $black: #000;
-$blue: #00205c;
-$darkblue: #00205c;
+// $blue: #00205c;
+$blue: #001c54;
+// $darkblue: #00205c;
+// $navyblue: #001c54;
+// $backblue: #232a4c;
+$darkblue: #001c54;
 $navyblue: #001c54;
-$backblue: #232a4c;
+$backblue: #001c54;
 $lightgray: #efffff;
 $gray: #f5f9fc;
 $darkgray: #232937;
 $white-gary: #ebebeb;
 $whitedarkgray: #e9eaeb;
 $lightblack: #646464;
-$yellow: #fab615;
+// $yellow: #fab615;
+$yellow: #ffcc29;
 $grayborder: #cccccc;
-$darkyellow: #ffcc29;
-$darkyellows: #f8bf01;
+// $darkyellow: #ffcc29;
+$darkyellow: #f8c300;
+// $darkyellows: #f8bf01;
+$darkyellows: #ffcc29;
 $black-gray: #7a7a7a;
 $black-graycolor: #797979;
+$gray-light: #6d6d6d;
+$color-e7: #e7e7e7;
+
+
 
 
 $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

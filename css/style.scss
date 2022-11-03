@@ -73,6 +73,8 @@ header{
     color: $blue;
     // padding: 14px 8px;
     border-radius: 5px 0 0 5px;
+    -webkit-box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
     @include border-box();
     a{
         display: block;
@@ -97,6 +99,8 @@ header{
 .whapp,.call {    
     background: $white;
     height: 40px;
+    -webkit-box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
     a {
         padding: 8px 12px;
         span{
@@ -760,42 +764,45 @@ header{
         // }
     }
     .tab-section{
-        .cat-list{
-            margin: 0 10px;
-            // background: pink;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: center;
-            overflow: hidden;
-            overflow-x: auto;
-            li{
-                @include di-block();
-                @include valign-top();
-                cursor: pointer;
-                color: $white;
-                font-family: $font-family-gil-rg;
-                font-size: 16px;
-                text-align: center;
-                padding: 11px 12px;
-                // margin-right: 6.83%;
-                width: 100%;
-                @include border-radius(5px);
-                &:first-child {
-                    min-width: 188px;
-                }
-                &:last-child{
-                    margin-right: 0;
-                }
-                &.current{
-                    background: $darkyellow;
-                    color: $darkgray;
-                    font-family: $font-family-gil-bd;
-                }
-            }
-        }
+
+        @import "./sass/hor-tab-pills";
+
+        // .cat-list{
+        //     margin: 0 10px;
+        //     // background: pink;
+        //     display: flex;
+        //     flex-direction: row;
+        //     flex-wrap: nowrap;
+        //     justify-content: flex-start;
+        //     align-items: center;
+        //     align-content: center;
+        //     overflow: hidden;
+        //     overflow-x: auto;
+        //     li{
+        //         @include di-block();
+        //         @include valign-top();
+        //         cursor: pointer;
+        //         color: $white;
+        //         font-family: $font-family-gil-rg;
+        //         font-size: 16px;
+        //         text-align: center;
+        //         padding: 11px 12px;
+        //         // margin-right: 6.83%;
+        //         width: 100%;
+        //         @include border-radius(5px);
+        //         &:first-child {
+        //             min-width: 188px;
+        //         }
+        //         &:last-child{
+        //             margin-right: 0;
+        //         }
+        //         &.current{
+        //             background: $darkyellow;
+        //             color: $darkgray;
+        //             font-family: $font-family-gil-bd;
+        //         }
+        //     }
+        // }
         .content-area{
             .accord-content {
                 display: none;
@@ -804,88 +811,91 @@ header{
                 &.current {
                     display: inherit;
                 }
-                .accord{
-                    border-top: 1px solid rgba(255,255,255,0.2);
-                    .accordbx {
-                        border-bottom: 1px solid rgba(255,255,255,0.2);
-                    }
-                    .accordtitle {
-                        // background: #fff;
-                        cursor: pointer;
-                        padding: 11px 25px 11px 0px;
-                        color: $white;
-                        font-family: $font-family-gil-bd;
-                        font-size: 16px;
-                        text-align: left;
-                        @include pos-relative();
-                        &::before, &::after {
-                            content: "";
-                            background: $darkyellow;                        
-                            position: absolute;
-                            right: 25px;
-                            top: 50%;
-                            -webkit-transform: translateY(-50%);
-                            -moz-transform: translateY(-50%);
-                            -o-transform: translateY(-50%);
-                            -ms-transform: translateY(-50%);
-                            transform: translateY(-50%);
-                        }
-                        &::before {                        
-                            width: 12px;
-                            height: 2px;
-                        }
-                        &::after{
-                            width: 2px;
-                            height: 12px;
-                            right: 30px;
-                        }
-                        &.active::after{
-                            display: none;
-                        }
-                        p {
-                            color: $white;
-                            font-family: $font-family-gil-bd;                        
-                            font-size: 16px;
-                            line-height: 20px;
-                            font-weight: normal;                        
-                            padding: 0 50px 0 0;
-                            margin: 0px;
-                        }
-                    }    
-                    .accorddesc {
-                        padding: 10px 60px 30px 0px;   
-                        display: none; 
-                        p {
-                            font-size: 14px;
-                        }
-                        ul{
-                            @include unordered-list();
-                            li{
-                                color: $white;
-                                font-size: 14px;
-                                font-family: $font-family-gil-rg;
-                                line-height: 18px;
-                                text-align: left;
-                                padding-left: 24px;
-                                margin-bottom: 20px;
-                                @include pos-relative();
-                                &:last-child{
-                                    margin-bottom: 0;
-                                }
-                                &::before{
-                                    content: "";
-                                    background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
-                                    height: 12px;
-                                    width: 12px;
-                                    position: absolute;
-                                    left: 0;
-                                    top: 0;
-                                    margin-top: 3px;
-                                }
-                            }
-                        }
-                    }
-                }
+
+                @import "sass/accordian";
+
+                // .accord{
+                //     border-top: 1px solid rgba(255,255,255,0.2);
+                //     .accordbx {
+                //         border-bottom: 1px solid rgba(255,255,255,0.2);
+                //     }
+                //     .accordtitle {
+                //         // background: #fff;
+                //         cursor: pointer;
+                //         padding: 11px 25px 11px 0px;
+                //         color: $white;
+                //         font-family: $font-family-gil-bd;
+                //         font-size: 16px;
+                //         text-align: left;
+                //         @include pos-relative();
+                //         &::before, &::after {
+                //             content: "";
+                //             background: $darkyellow;                        
+                //             position: absolute;
+                //             right: 25px;
+                //             top: 50%;
+                //             -webkit-transform: translateY(-50%);
+                //             -moz-transform: translateY(-50%);
+                //             -o-transform: translateY(-50%);
+                //             -ms-transform: translateY(-50%);
+                //             transform: translateY(-50%);
+                //         }
+                //         &::before {                        
+                //             width: 12px;
+                //             height: 2px;
+                //         }
+                //         &::after{
+                //             width: 2px;
+                //             height: 12px;
+                //             right: 30px;
+                //         }
+                //         &.active::after{
+                //             display: none;
+                //         }
+                //         p {
+                //             color: $white;
+                //             font-family: $font-family-gil-bd;                        
+                //             font-size: 16px;
+                //             line-height: 20px;
+                //             font-weight: normal;                        
+                //             padding: 0 50px 0 0;
+                //             margin: 0px;
+                //         }
+                //     }    
+                //     .accorddesc {
+                //         padding: 10px 60px 30px 0px;   
+                //         display: none; 
+                //         p {
+                //             font-size: 14px;
+                //         }
+                //         ul{
+                //             @include unordered-list();
+                //             li{
+                //                 color: $white;
+                //                 font-size: 14px;
+                //                 font-family: $font-family-gil-rg;
+                //                 line-height: 18px;
+                //                 text-align: left;
+                //                 padding-left: 24px;
+                //                 margin-bottom: 20px;
+                //                 @include pos-relative();
+                //                 &:last-child{
+                //                     margin-bottom: 0;
+                //                 }
+                //                 &::before{
+                //                     content: "";
+                //                     background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+                //                     height: 12px;
+                //                     width: 12px;
+                //                     position: absolute;
+                //                     left: 0;
+                //                     top: 0;
+                //                     margin-top: 3px;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
                 
             }
         }
@@ -1088,13 +1098,17 @@ header{
         //     margin-left: -120px;
         // }
     }
-    .thumbnail{
-        height: 92px;
-        @include pos-relative();
-        img{
-            @include vertical-center();
+    .corporate-carousel{
+        padding-top: 20px;
+        .thumbnail{
+            height: 92px;
+            @include pos-relative();
+            img{
+                @include vertical-center();
+            }
         }
     }
+    
 }
 
 .about {
@@ -1334,5 +1348,7 @@ footer{
 }
 
 @import "sass/program-details";
+
+@import "sass/program-list";
 
 @import "sass/media";

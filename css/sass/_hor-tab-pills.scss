@@ -1,0 +1,36 @@
+.cat-list{
+    margin: 0 10px;
+    // background: pink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    overflow-x: auto;
+    li{
+        @include di-block();
+        @include valign-top();
+        cursor: pointer;
+        color: $white;
+        font-family: $font-family-gil-rg;
+        font-size: 16px;
+        text-align: center;
+        padding: 11px 12px;
+        // margin-right: 6.83%;
+        width: 100%;
+        @include border-radius(5px);
+        &:first-child {
+            min-width: 188px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &.current{
+            background: $darkyellow;
+            color: $darkgray;
+            font-family: $font-family-gil-bd;
+        }
+    }
+}

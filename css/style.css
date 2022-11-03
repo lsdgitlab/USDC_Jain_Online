@@ -137,7 +137,7 @@ h2 {
 }
 h2::after {
   content: "";
-  background: #f8bf01;
+  background: #ffcc29;
   height: 3px;
   width: 45px;
   position: absolute;
@@ -252,14 +252,14 @@ p {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #00205c;
+  background: #001c54;
 }
 
 .owl-theme .owl-dots .owl-dot span {
   width: 7px;
   height: 7px;
   margin: 5px 5px;
-  background: #fab615;
+  background: #ffcc29;
 }
 
 .owl-carousel .owl-item img {
@@ -359,10 +359,10 @@ h2 {
     color: #fff;
   }
   50% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   75% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   100% {
     color: #fff;
@@ -373,10 +373,10 @@ h2 {
     color: #fff;
   }
   50% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   75% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   100% {
     color: #fff;
@@ -384,7 +384,7 @@ h2 {
 }
 @-webkit-keyframes color-YellowToWhite {
   0% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   50% {
     color: #fff;
@@ -393,12 +393,12 @@ h2 {
     color: #fff;
   }
   100% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
 }
 @keyframes color-YellowToWhite {
   0% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
   50% {
     color: #fff;
@@ -407,12 +407,12 @@ h2 {
     color: #fff;
   }
   100% {
-    color: #f8bf01;
+    color: #ffcc29;
   }
 }
 @-webkit-keyframes bgcolor-YellowToWhite {
   0% {
-    background: #f8bf01;
+    background: #ffcc29;
   }
   50% {
     background: #fff;
@@ -421,12 +421,12 @@ h2 {
     background: #fff;
   }
   100% {
-    background: #f8bf01;
+    background: #ffcc29;
   }
 }
 @keyframes bgcolor-YellowToWhite {
   0% {
-    background: #f8bf01;
+    background: #ffcc29;
   }
   50% {
     background: #fff;
@@ -435,7 +435,7 @@ h2 {
     background: #fff;
   }
   100% {
-    background: #f8bf01;
+    background: #ffcc29;
   }
 }
 @-webkit-keyframes color-BlackToYellow {
@@ -443,10 +443,10 @@ h2 {
     color: #000;
   }
   50% {
-    color: #ffcc29;
+    color: #f8c300;
   }
   75% {
-    color: #ffcc29;
+    color: #f8c300;
   }
   100% {
     color: #000;
@@ -457,10 +457,10 @@ h2 {
     color: #000;
   }
   50% {
-    color: #ffcc29;
+    color: #f8c300;
   }
   75% {
-    color: #ffcc29;
+    color: #f8c300;
   }
   100% {
     color: #000;
@@ -469,41 +469,41 @@ h2 {
 @-webkit-keyframes border-LeftToRight {
   0% {
     width: 0px;
-    background: #00205c;
+    background: #001c54;
   }
   50% {
     width: 45px;
-    background: #f8bf01;
+    background: #ffcc29;
   }
   75% {
     width: 45px;
-    background: #f8bf01;
+    background: #ffcc29;
   }
   100% {
     width: 0px;
-    background: #00205c;
+    background: #001c54;
   }
 }
 @keyframes border-LeftToRight {
   0% {
     width: 0px;
-    background: #00205c;
+    background: #001c54;
   }
   50% {
     width: 45px;
-    background: #f8bf01;
+    background: #ffcc29;
   }
   75% {
     width: 45px;
-    background: #f8bf01;
+    background: #ffcc29;
   }
   100% {
     width: 0px;
-    background: #00205c;
+    background: #001c54;
   }
 }
 header {
-  background: #00205c;
+  background: #001c54;
   width: 100%;
   position: fixed;
   top: 0;
@@ -544,7 +544,7 @@ header .di-block .tel:hover img {
   transform-origin: 50% 50%;
 }
 header .di-block .tel:hover span {
-  color: #ffcc29;
+  color: #f8c300;
 }
 
 .enquire-now {
@@ -555,9 +555,10 @@ header .di-block .tel:hover span {
   right: 0;
   top: 0;
   z-index: 1012;
-  background: #ffcc29;
-  color: #00205c;
+  background: #f8c300;
+  color: #001c54;
   border-radius: 5px 0 0 5px;
+  box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
 }
 .enquire-now a {
@@ -565,7 +566,7 @@ header .di-block .tel:hover span {
   padding: 14px 8px;
 }
 .enquire-now a span {
-  color: #00205c;
+  color: #001c54;
   font-family: var(--pr-font-gilroyregular);
   font-size: 14px;
   font-weight: normal;
@@ -579,6 +580,7 @@ header .di-block .tel:hover span {
 .whapp, .call {
   background: #fff;
   height: 40px;
+  box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.06);
 }
 .whapp a, .call a {
   padding: 8px 12px;
@@ -599,8 +601,8 @@ header .di-block .tel:hover span {
 }
 
 .top-banner {
-  background: #00205c;
-  background: #00205c url(../img/top-banner-girl-desktop.png) scroll no-repeat center bottom;
+  background: #001c54;
+  background: #001c54 url(../img/top-banner-girl-desktop.png) scroll no-repeat center bottom;
   background-position-x: 51.4%;
   height: 100%;
   padding-top: 97px;
@@ -642,7 +644,7 @@ header .di-block .tel:hover span {
   margin-left: 273px;
 }
 .top-banner .text-box h2 {
-  color: #fab615;
+  color: #ffcc29;
   padding: 0;
   margin: 0;
   -webkit-animation: color-YellowToWhite 5s infinite;
@@ -667,7 +669,7 @@ header .di-block .tel:hover span {
   margin-top: 40px;
 }
 .top-banner .text-box .nacc span {
-  color: #fab615;
+  color: #ffcc29;
   font-family: var(--pr-font-opensans);
   font-size: 24px;
   font-weight: 700;
@@ -745,7 +747,7 @@ header .di-block .tel:hover span {
 }
 .top-banner .enquire .f-wrapper .form-wrapper input[type=text]:focus-visible, .top-banner .enquire .f-wrapper .form-wrapper select:focus-visible {
   outline: none;
-  border-color: #ffcc29;
+  border-color: #f8c300;
 }
 .top-banner .enquire .f-wrapper .form-wrapper input[type=submit] {
   -webkit-appearance: none;
@@ -767,8 +769,8 @@ header .di-block .tel:hover span {
   cursor: pointer;
 }
 .top-banner .enquire .f-wrapper .form-wrapper input[type=submit]:hover {
-  background: #ffcc29;
-  border: 1px solid #ffcc29;
+  background: #f8c300;
+  border: 1px solid #f8c300;
   transition: all 0.5s ease-in;
 }
 .top-banner .enquire .f-wrapper .form-wrapper.form-container {
@@ -784,7 +786,7 @@ header .di-block .tel:hover span {
 }
 .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:focus, .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:valid {
   outline: 0;
-  border-color: #00205c;
+  border-color: #001c54;
 }
 .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:focus + label, .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:valid + label {
   top: 14px;
@@ -1042,7 +1044,7 @@ header .di-block .tel:hover span {
 }
 
 .mba {
-  background: #00205c;
+  background: #001c54;
   padding-top: 50px;
 }
 .mba h2 {
@@ -1080,7 +1082,7 @@ header .di-block .tel:hover span {
   margin-right: 0;
 }
 .mba .tab-section .cat-list li.current {
-  background: #ffcc29;
+  background: #f8c300;
   color: #232937;
   font-family: var(--pr-font-gilroybold);
 }
@@ -1100,7 +1102,7 @@ header .di-block .tel:hover span {
 }
 .mba .tab-section .content-area .accord-content .accord .accordtitle {
   cursor: pointer;
-  padding: 11px 25px 11px 0px;
+  padding: 11px 0 11px 0px;
   color: #fff;
   font-family: var(--pr-font-gilroybold);
   font-size: 16px;
@@ -1109,7 +1111,7 @@ header .di-block .tel:hover span {
 }
 .mba .tab-section .content-area .accord-content .accord .accordtitle::before, .mba .tab-section .content-area .accord-content .accord .accordtitle::after {
   content: "";
-  background: #ffcc29;
+  background: #f8c300;
   position: absolute;
   right: 25px;
   top: 50%;
@@ -1171,6 +1173,15 @@ header .di-block .tel:hover span {
   top: 0;
   margin-top: 3px;
 }
+@media only screen and (max-width: 991px) {
+  .mba .tab-section .content-area .accord-content .accord .accordtitle {
+    padding-left: 8px;
+  }
+  .mba .tab-section .content-area .accord-content .accord .accorddesc {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
 
 .learner {
   position: relative;
@@ -1224,7 +1235,7 @@ header .di-block .tel:hover span {
 }
 .learner .learners-carousel .item .learner-text .learner-name strong {
   display: block;
-  color: #00205c;
+  color: #001c54;
   font-family: var(--pr-font-gilroyregular);
   font-weight: 600;
   font-size: 16px;
@@ -1245,11 +1256,14 @@ header .di-block .tel:hover span {
 .corporate h2 {
   text-align: center;
 }
-.corporate .thumbnail {
+.corporate .corporate-carousel {
+  padding-top: 20px;
+}
+.corporate .corporate-carousel .thumbnail {
   height: 92px;
   position: relative;
 }
-.corporate .thumbnail img {
+.corporate .corporate-carousel .thumbnail img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1327,7 +1341,7 @@ header .di-block .tel:hover span {
   bottom: 0;
 }
 .about .highlight p {
-  color: #00205c;
+  color: #001c54;
   font-family: var(--pr-font-gilroybold);
   font-size: 18px;
   text-align: left;
@@ -1365,7 +1379,7 @@ header .di-block .tel:hover span {
 }
 
 footer {
-  background: #232a4c;
+  background: #001c54;
   padding: 30px 0;
 }
 footer p {
@@ -1436,18 +1450,18 @@ footer p {
   border: none;
   font-size: 16px;
   background: transparent;
-  color: #00205c;
+  color: #001c54;
   font-family: var(--pr-font-gilroyregular);
   margin-top: 10px;
   display: block;
   text-decoration: underline;
 }
 
-.top-banner-prdetail {
+.innerpage {
   background-image: none;
   position: relative;
 }
-.top-banner-prdetail::after {
+.innerpage::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1457,14 +1471,14 @@ footer p {
   width: 100%;
   z-index: 10;
 }
-.top-banner-prdetail .enquire .f-wrapper .form-wrapper {
+.innerpage .enquire .f-wrapper .form-wrapper {
   box-shadow: 0px 6px 19.44px 4.56px rgba(0, 0, 0, 0.03);
 }
-.top-banner-prdetail .text-box {
+.innerpage .text-box {
   background: transparent url("../img/details-page/program-details-desktop.png") no-repeat right center;
   background-position: 92% 33px;
 }
-.top-banner-prdetail .text-box h1 {
+.innerpage .text-box h1 {
   font-family: var(--pr-font-gilroyregular);
   font-size: 36px;
   line-height: 40px;
@@ -1472,12 +1486,12 @@ footer p {
   padding-bottom: 30px;
   position: relative;
 }
-.top-banner-prdetail .text-box h1::after {
+.innerpage .text-box h1::after {
   left: -14px;
 }
-.top-banner-prdetail .text-box h1::before {
+.innerpage .text-box h1::before {
   content: "";
-  background: #f8bf01;
+  background: #ffcc29;
   height: 4px;
   width: 72px;
   position: absolute;
@@ -1486,10 +1500,10 @@ footer p {
   -webkit-animation: border-LeftToRight 3s infinite;
           animation: border-LeftToRight 3s infinite;
 }
-.top-banner-prdetail .text-box .features {
+.innerpage .text-box .features {
   margin-top: 50px;
 }
-.top-banner-prdetail .text-box .hashtag {
+.innerpage .text-box .hashtag {
   color: #fff;
   font-family: var(--pr-font-gilroybold);
   font-size: 20px;
@@ -1502,7 +1516,7 @@ footer p {
   padding-right: 60px;
   position: relative;
 }
-.top-banner-prdetail .text-box .hashtag::after {
+.innerpage .text-box .hashtag::after {
   content: "";
   position: absolute;
   top: -16px;
@@ -1557,7 +1571,7 @@ footer p {
   text-align: center;
 }
 .online .tabbed-content .tabs ul li a:hover, .online .tabbed-content .tabs ul li a.active {
-  background: #00205c;
+  background: #001c54;
   color: #fff;
   font-family: var(--pr-font-gilroybold);
 }
@@ -1603,7 +1617,7 @@ footer p {
   text-align: left;
 }
 .online .tabbed-content .tab-item.active::before {
-  background: #00205c;
+  background: #001c54;
   color: #fff;
   font-family: var(--pr-font-gilroybold);
 }
@@ -1638,7 +1652,7 @@ footer p {
     display: none;
   }
   .online .tabbed-content .tab-item.active .item-content {
-    padding: 25px 0;
+    padding: 25px 0 36px;
   }
 }
 .online .pointer-list li {
@@ -1648,6 +1662,177 @@ footer p {
 
 .program-learner .learners-container {
   padding-top: 0;
+}
+
+.prdetail-corporate {
+  padding-bottom: 65px;
+}
+
+.faq {
+  background: #f5f9fc;
+  padding: 70px 0 70px;
+}
+.faq .accord {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.faq .accord .accordbx {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.faq .accord .accordtitle {
+  cursor: pointer;
+  padding: 11px 0 11px 0px;
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+.faq .accord .accordtitle::before, .faq .accord .accordtitle::after {
+  content: "";
+  background: #f8c300;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq .accord .accordtitle::before {
+  width: 12px;
+  height: 2px;
+}
+.faq .accord .accordtitle::after {
+  width: 2px;
+  height: 12px;
+  right: 30px;
+}
+.faq .accord .accordtitle.active::after {
+  display: none;
+}
+.faq .accord .accordtitle p {
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0 50px 0 0;
+  margin: 0px;
+}
+.faq .accord .accorddesc {
+  padding: 10px 60px 30px 0px;
+  display: none;
+}
+.faq .accord .accorddesc p {
+  font-size: 14px;
+}
+.faq .accord .accorddesc ul {
+  padding: 0;
+  margin: 0;
+  list-style: outside none none;
+}
+.faq .accord .accorddesc ul li {
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroyregular);
+  line-height: 18px;
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.faq .accord .accorddesc ul li:last-child {
+  margin-bottom: 0;
+}
+.faq .accord .accorddesc ul li::before {
+  content: "";
+  background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 3px;
+}
+@media only screen and (max-width: 991px) {
+  .faq .accord .accordtitle {
+    padding-left: 8px;
+  }
+  .faq .accord .accorddesc {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.faq h2 {
+  text-align: center;
+}
+.faq .accord .accordbx {
+  background: #fff;
+  padding: 0 35px 0 40px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.faq .accord .accordtitle {
+  padding: 28px 0 24px 0px;
+}
+.faq .accord .accordtitle::before {
+  width: 15px;
+  height: 10px;
+  right: 8px;
+  margin-top: 3px;
+  background: transparent url("../img/down-arrow.png") scroll no-repeat right center;
+  transition: all 0.5s ease-in;
+}
+.faq .accord .accordtitle::after {
+  width: 32px;
+  height: 32px;
+  right: 0;
+  margin-top: 3px;
+  background: transparent;
+  border: 1px solid #e7e7e7;
+  border-radius: 100%;
+}
+.faq .accord .accordtitle.active::before {
+  transform: rotate(180deg);
+  margin-top: -3px;
+}
+.faq .accord .accordtitle.active::after {
+  display: unset;
+}
+.faq .accord .accordtitle p {
+  color: #232937;
+  font-size: 18px;
+  font-family: var(--pr-font-gilroybold);
+}
+.faq .accord .accorddesc {
+  padding: 0px 0 35px;
+}
+.faq .accord .accorddesc p {
+  font-size: var(--pr-bd-font-size);
+  color: #6d6d6d;
+}
+
+.listpage .text-box {
+  background: transparent url("../img/program-list-page/program-listing-girl-desktop.png") no-repeat right center;
+  background-position: 92% 33px;
+}
+.listpage .text-box .hashtag {
+  margin-top: 78px;
+}
+.listpage .all-domain {
+  margin-top: 40px;
+}
+.listpage .all-domain ul li {
+  display: inline-block;
+  font-size: initial;
+  vertical-align: top;
+  cursor: default;
+  background: #ffcc29;
+  color: #001c54;
+  font-family: var(--pr-font-gilroyregular);
+  font-size: var(--pr-bd-font-size);
+  text-align: center;
+  padding: 4px 4px;
+  margin-right: 13px;
+  min-width: 76px;
+  border-radius: 25px;
 }
 
 @media only screen and (max-width: 1462px) {
@@ -1760,7 +1945,7 @@ footer p {
   }
   .top-banner .enquire .f-wrapper::before, .top-banner .enquire .f-wrapper::after {
     content: "";
-    background: #00205c;
+    background: #001c54;
     width: 15px;
     height: 30px;
     position: absolute;
@@ -1815,16 +2000,32 @@ footer p {
   footer {
     margin-bottom: 75px;
   }
-  .top-banner-prdetail .text-box h1::before {
+  .innerpage {
+    margin-bottom: 50px;
+  }
+  .innerpage::after {
+    display: none;
+  }
+  .innerpage .text-box h1::before {
     left: 50%;
     transform: translateX(-50%);
   }
-  .top-banner-prdetail .enquire .f-wrapper {
+  .innerpage .enquire .vis-mob .hashtag {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .innerpage .enquire .f-wrapper {
     margin-top: 0;
   }
   .online .tabbed-content .tab-item .item-content .toggle {
     font-size: 14px;
     line-height: 24px;
+  }
+  .listpage {
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -1977,6 +2178,9 @@ footer p {
     top: -8px;
     left: -4px;
   }
+  .mba .tab-section .content-area .accord-content {
+    padding: 20px 10px 48px;
+  }
   .learner h2 {
     margin-bottom: 0;
   }
@@ -2023,18 +2227,54 @@ footer p {
   .about .highlight p:first-child span {
     font-size: 30px;
   }
+  .innerpage .enquire .vis-mob .hashtag {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-right: 0;
+  }
   .online h2 {
     font-size: 22px;
     line-height: 30px;
+  }
+  .faq {
+    padding: 40px 0 60px;
+  }
+  .faq .accord .accordbx {
+    padding: 0 13px;
+    margin-bottom: 9px;
+  }
+  .faq .accord .accordbx .accordtitle {
+    padding: 28px 13px 20px 0px;
+  }
+  .faq .accord .accordbx .accordtitle p {
+    line-height: 24px;
+    font-size: var(--pr-bd-font-size);
+    line-height: 24px;
+  }
+  .faq .accord .accorddesc {
+    padding: 0px 0 13px;
+  }
+  .faq .accord .accorddesc p {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 400px) {
   .top-banner .text-box .features {
     max-width: 300px;
+    margin: 30px auto 0;
   }
   .top-banner .text-box .features .di-block {
     max-width: 150px;
     width: 100%;
+    margin-bottom: 25px;
+  }
+  .top-banner .text-box .features .di-block:first-child {
+    margin-bottom: 25px;
+  }
+  .top-banner .text-box .features .di-block:nth-child(2) {
+    margin-bottom: 25px;
   }
   .top-banner .text-box .features .di-block img {
     max-width: 25px;

@@ -1,0 +1,29 @@
+.listpage{
+    .text-box {
+        background: transparent url("../img/program-list-page/program-listing-girl-desktop.png") no-repeat right center;
+        background-position: 92% 33px;
+        .hashtag{
+            margin-top: 78px;
+           
+        }
+    }
+    .all-domain{
+        margin-top: 40px;
+        ul{
+            li{
+                @include di-block();
+                @include valign-top();
+                cursor: default;
+                background: $yellow;
+                color: $darkblue;
+                font-family: $font-family-gil-rg;
+                font-size: $font-size-base;
+                text-align: center;
+                padding: 4px 4px;
+                margin-right: 13px;
+                min-width: 76px;                
+                @include border-radius(25px);
+            }
+        }
+    }
+}
