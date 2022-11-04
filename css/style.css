@@ -2134,6 +2134,7 @@ footer p {
   .top-banner .enquire .f-wrapper {
     background: #fff;
     padding: 0 15px 5px;
+    margin-top: -24px;
     position: relative;
     z-index: 1;
   }
