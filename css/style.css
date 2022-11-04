@@ -1951,7 +1951,7 @@ footer p {
   font-size: 20px;
 }
 .domains .accord .accorddesc {
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
   border-top: 1px solid #e1e1e1;
 }
 .domains .accord .accorddesc .mba-cards .card {
@@ -2001,7 +2001,7 @@ footer p {
   margin-right: 10px;
 }
 .domains .accord .accorddesc .mba-cards .card .card-content .ext-link {
-  color: #232937;
+  color: #001c54;
   font-size: 14px;
   font-family: var(--pr-font-gilroybold);
   text-align: left;
