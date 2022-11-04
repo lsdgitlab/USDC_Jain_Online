@@ -1,8 +1,10 @@
-.accord{
-    border-top: 1px solid rgba(255,255,255,0.2);
+.accord {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
     .accordbx {
-        border-bottom: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
+
     .accordtitle {
         // background: #fff;
         cursor: pointer;
@@ -12,9 +14,11 @@
         font-size: 16px;
         text-align: left;
         @include pos-relative();
-        &::before, &::after {
+
+        &::before,
+        &::after {
             content: "";
-            background: $darkyellow;                        
+            background: $darkyellow;
             position: absolute;
             right: 25px;
             top: 50%;
@@ -24,37 +28,45 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
-        &::before {                        
+
+        &::before {
             width: 12px;
             height: 2px;
         }
-        &::after{
+
+        &::after {
             width: 2px;
             height: 12px;
             right: 30px;
         }
-        &.active::after{
+
+        &.active::after {
             display: none;
         }
+
         p {
             color: $white;
-            font-family: $font-family-gil-bd;                        
+            font-family: $font-family-gil-bd;
             font-size: 16px;
             line-height: 20px;
-            font-weight: normal;                        
+            font-weight: normal;
             padding: 0 50px 0 0;
             margin: 0px;
         }
-    }    
+    }
+
     .accorddesc {
-        padding: 10px 60px 30px 0px;   
-        display: none; 
+        padding: 10px 60px 30px 0px;
+        display: none;
+
         p {
             font-size: 14px;
         }
-        ul{
+
+        ul {
             @include unordered-list();
-            li{
+
+            li {
                 color: $white;
                 font-size: 14px;
                 font-family: $font-family-gil-rg;
@@ -63,10 +75,12 @@
                 padding-left: 24px;
                 margin-bottom: 20px;
                 @include pos-relative();
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
-                &::before{
+
+                &::before {
                     content: "";
                     background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
                     height: 12px;
@@ -83,18 +97,18 @@
 
 
 @media only screen and (max-width:991px) {
-    .accord{
-        .accordbx {
+    .accord {
+        .accordbx {}
 
-        }
-        .accordtitle{
+        .accordtitle {
             padding-left: 8px;
         }
-        .accorddesc{
+
+        .accorddesc {
             padding-left: 8px;
             padding-right: 8px;
         }
-        
+
     }
-        
+
 }

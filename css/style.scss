@@ -310,7 +310,7 @@ header{
                         input {
                             &:focus, &:valid{
                                 outline:0;
-                                border-color:$darkblue;
+                                // border-color:$darkblue;
                             }
                             &:focus, &:valid{
                                 &+label {
@@ -378,137 +378,6 @@ header{
     }
 }
 
-// .program{
-//     margin: 0 0 75px;
-//     @include pos-relative();
-//     &::after{
-//         content: "";
-//         background: $gray;
-//         position:absolute;
-//         top: 0;
-//         left: 50%;
-//         height: 100%;
-//         width: 50%;
-//         z-index: -1;
-//     }
-//     ul{
-//         @include unordered-list();
-//         li{
-//             color: $darkgray;
-//             font-size: 14px;
-//             font-family: $font-family-gil-rg;
-//             line-height: 18px;
-//             text-align: left;
-//             padding-left: 24px;
-//             margin-bottom: 15px;
-//             @include pos-relative();
-//             &:last-child{
-//                 margin-bottom: 0;
-//             }
-//             &::before{
-//                 content: "";
-//                 background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
-//                 height: 12px;
-//                 width: 12px;
-//                 position: absolute;
-//                 left: 0;
-//                 top: 0;
-//                 margin-top: 3px;
-//             }
-//         }
-//     }
-//     .pr-overview{
-//         @include valign-top();
-//         padding-right: 20px;
-//         @include border-box();
-//         h2{
-
-//         }
-//         p{
-//             color: $darkgray;
-//             font-size: 14px;
-//             font-family: $font-family-gil-rg;
-//             line-height: 24px;
-//             text-align: left;
-//             margin-bottom: 30px;
-//         }
-//         .bold-text{            
-//             font-family: $font-family-gil-bd;
-//             font-size: 16px;
-//             margin-bottom: 25px;
-//         }
-//         ul{            
-//             li{  
-//                 margin-bottom: 15px;
-//                 &:last-child{
-//                     margin-bottom: 0;
-//                 }
-//             }
-//         }
-//         .eligibility{
-//             background: $darkblue;
-//             padding: 22px 25px;
-//             h2{
-//                 color: $darkyellow;
-//                 font-family: $font-family-gil-bd;  
-//                 font-size: 24px;
-//                 line-height: 28px;                
-//                 font-weight: normal;
-//                 text-align: left; 
-//                 margin-bottom: 0;
-//                 &::after{
-//                     display: none;
-//                 }
-//             }
-//             p{
-//                 color: $white;
-//                 font-size: 14px;
-//                 font-family: $font-family-gil-rg;
-//                 text-align: left;
-//                 &:last-child{
-//                     margin-bottom: 0;
-//                 }
-//             }
-//         }
-        
-//     }
-//     .pr-highlight{
-//         @include valign-top();
-//         padding-left: 10px;
-//         background: $gray;
-//         padding: 65px 0 65px 60px;
-//         @include border-box();
-//         h3{
-//             font-size: 24px;
-//             font-family: $font-family-gil-bd;
-//             font-weight: normal;
-//             text-align: left;
-//             margin-top: 0;
-//             margin-bottom: 30px;
-//             @include pos-relative();
-//             animation: color-BlackToYellow 5s infinite;
-//             &::after{
-//                 content: "";
-//                 position: absolute;
-//                 top: -18px;
-//                 left: 0;
-//                 background: transparent url("../img/big-plus-sign.png") scroll no-repeat top left;
-//                 height: 28px;
-//                 width: 28px;   
-//                 margin-left: 212px;                             
-//             }
-//         }
-//         ul{            
-//             li{   
-//                 margin-bottom: 38px;
-//                 &:last-child{
-//                     margin-bottom: 0;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .program-overview{
     margin: 0 0 80px;
     @include pos-relative();
@@ -535,7 +404,7 @@ header{
         margin-bottom: 30px;
     }
     .info{
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         .para{
             color: $darkgray;
             font-size: 14px;
@@ -681,7 +550,7 @@ header{
 
 
 .rank {
-    padding: 75px 0;
+    padding: 75px 0 55px;
     h2{
         text-align: center;
     }
@@ -936,82 +805,6 @@ header{
         //     margin-left: -158px;
         // }
     }
-    // .learner-carousel{
-    //     // max-width: 980px;
-    //     // padding-top: 50px;
-    //     padding: 0 50px;
-    //     margin: 0 auto;
-    //     background: $white;
-    //     .owl-dots {
-    //         position: absolute;
-    //         width: auto;
-    //         left: 50%;
-    //         bottom: 0;
-    //         transform: translateX(-50%);
-    //         /* left: 420px; */
-    //         margin-left: -55px;
-    //     }        
-    //     .di-block{
-    //         @include valign-top();
-    //         &:first-child{
-    //             width: 37.3%;
-    //         }
-    //         &:nth-child(2){
-    //             width: 62.7%;
-    //         }
-    //         .thumbnail{
-    //             border: 6px solid $grayborder;
-    //             // max-width: 365px;
-    //             @include border-box();                
-    //         }
-    //         .learner-text{
-    //             padding-left: 55px;
-    //             padding-right: 20px;
-    //             // max-width: 615px;
-    //             @include border-box();                
-    //             p{
-    //                 color: $darkgray;
-    //                 font-family: $font-family-gil-rg;
-    //                 font-size: 16px;
-    //                 font-weight: normal;
-    //                 text-align: left;
-    //                 line-height: 30px;                    
-    //                 @include pos-relative();
-    //                 &:first-child{
-    //                     padding: 85px 0 35px;
-    //                     &::before{
-    //                         content: "";
-    //                         background: transparent url("../img/quote.png") scroll no-repeat top left;
-    //                         position: absolute;
-    //                         left: -3px;
-    //                         top: -5px;
-    //                         width: 76px;
-    //                         height: 60px;
-    //                     }
-    //                 }                   
-    //             }
-    //             .learner-name{
-    //                 margin-bottom: 15px;
-    //                 strong{
-    //                     display: block;
-    //                     color: $darkgray;
-    //                     font-family: $font-family-gil-bd;
-    //                     font-size: 16px;
-    //                     line-height: 24px;                        
-    //                     text-align: left;
-    //                 }
-    //                 span.course-name{
-    //                     display: block;
-    //                     color: $darkgray;
-    //                     font-size: 14px;
-    //                     line-height: 24px;                        
-    //                     text-align: left;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    // }
     
     .learners-carousel{
         padding: 0 50px;
@@ -1089,7 +882,7 @@ header{
 
 
 .corporate{
-    padding: 0px 0 10px;
+    padding: 0px 0 20px;
     h2{
         text-align: center;
         // &::after{
@@ -1272,7 +1065,7 @@ footer{
 //     background-image: -moz-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
 //   background-image: -webkit-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
 //   background-image: -ms-linear-gradient( 49deg, rgb(250,182,21) 0%, rgb(255,204,41) 100%);
-    z-index: 4;
+    z-index: 1011;
 
     ul{        
         li{

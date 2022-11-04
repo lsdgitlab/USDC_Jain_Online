@@ -786,7 +786,6 @@ header .di-block .tel:hover span {
 }
 .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:focus, .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:valid {
   outline: 0;
-  border-color: #001c54;
 }
 .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:focus + label, .top-banner .enquire .f-wrapper .form-wrapper.form-container .form-control input:valid + label {
   top: 14px;
@@ -858,7 +857,7 @@ header .di-block .tel:hover span {
   margin-bottom: 30px;
 }
 .program-overview .info {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .program-overview .info .para {
   color: #232937;
@@ -975,7 +974,7 @@ header .di-block .tel:hover span {
 }
 
 .rank {
-  padding: 75px 0;
+  padding: 75px 0 55px;
 }
 .rank h2 {
   text-align: center;
@@ -1251,7 +1250,7 @@ header .di-block .tel:hover span {
 }
 
 .corporate {
-  padding: 0px 0 10px;
+  padding: 0px 0 20px;
 }
 .corporate h2 {
   text-align: center;
@@ -1395,7 +1394,7 @@ footer p {
   left: 0;
   bottom: 0;
   background: linear-gradient(49deg, rgb(250, 182, 21) 0%, rgb(255, 204, 41) 100%);
-  z-index: 4;
+  z-index: 1011;
 }
 .sticky ul li {
   display: inline-block;
@@ -1528,7 +1527,6 @@ footer p {
 }
 
 .online {
-  margin-top: -16px;
   position: relative;
   z-index: 1011;
 }
@@ -1665,7 +1663,7 @@ footer p {
 }
 
 .prdetail-corporate {
-  padding-bottom: 65px;
+  padding-bottom: 75px;
 }
 
 .faq {
@@ -1834,6 +1832,197 @@ footer p {
   min-width: 76px;
   border-radius: 25px;
 }
+.listpage .all-domain ul li:last-child {
+  margin-right: 0;
+}
+
+.list-page-rank {
+  padding-top: 25px;
+}
+
+.domains {
+  background: #f8f8f8;
+}
+.domains .accord {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.domains .accord .accordbx {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.domains .accord .accordtitle {
+  cursor: pointer;
+  padding: 11px 0 11px 0px;
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+.domains .accord .accordtitle::before, .domains .accord .accordtitle::after {
+  content: "";
+  background: #f8c300;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.domains .accord .accordtitle::before {
+  width: 12px;
+  height: 2px;
+}
+.domains .accord .accordtitle::after {
+  width: 2px;
+  height: 12px;
+  right: 30px;
+}
+.domains .accord .accordtitle.active::after {
+  display: none;
+}
+.domains .accord .accordtitle p {
+  color: #fff;
+  font-family: var(--pr-font-gilroybold);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0 50px 0 0;
+  margin: 0px;
+}
+.domains .accord .accorddesc {
+  padding: 10px 60px 30px 0px;
+  display: none;
+}
+.domains .accord .accorddesc p {
+  font-size: 14px;
+}
+.domains .accord .accorddesc ul {
+  padding: 0;
+  margin: 0;
+  list-style: outside none none;
+}
+.domains .accord .accorddesc ul li {
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroyregular);
+  line-height: 18px;
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.domains .accord .accorddesc ul li:last-child {
+  margin-bottom: 0;
+}
+.domains .accord .accorddesc ul li::before {
+  content: "";
+  background: transparent url("../img/plus-sign.png") scroll no-repeat top left;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 3px;
+}
+@media only screen and (max-width: 991px) {
+  .domains .accord .accordtitle {
+    padding-left: 8px;
+  }
+  .domains .accord .accorddesc {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.domains .accord {
+  padding: 38px 0 50px;
+}
+.domains .accord .accordbx {
+  border-top: 1px solid #e1e1e1;
+}
+.domains .accord .accordbx:first-child {
+  border: none;
+}
+.domains .accord .accordtitle {
+  padding: 19px 0 19px 0px;
+}
+.domains .accord .accordtitle::before, .domains .accord .accordtitle::after {
+  background: #232937;
+}
+.domains .accord .accordtitle p {
+  color: #232937;
+  font-size: 20px;
+}
+.domains .accord .accorddesc {
+  padding: 30px 0 60px;
+  border-top: 1px solid #e1e1e1;
+}
+.domains .accord .accorddesc .mba-cards .card {
+  display: inline-block;
+  font-size: initial;
+  vertical-align: top;
+  background: #fff;
+  margin-bottom: 40px;
+  width: 31.6%;
+}
+.domains .accord .accorddesc .mba-cards .card:nth-of-type(3n+2) {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content {
+  padding: 25px 20px;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content h3 {
+  font-size: 18px;
+  color: #232937;
+  font-family: var(--pr-font-gilroybold);
+  text-align: left;
+  margin: 0px 0 24px;
+  line-height: 20px;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: outside none none;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content ul li {
+  color: #232937;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 0;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content ul li::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.domains .accord .accorddesc .mba-cards .card .card-content ul li::before {
+  display: none;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content ul li img {
+  float: left;
+  margin-right: 10px;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content .ext-link {
+  color: #232937;
+  font-size: 14px;
+  font-family: var(--pr-font-gilroybold);
+  text-align: left;
+  text-decoration: underline;
+  margin-top: 25px;
+  display: inline-block;
+  font-size: initial;
+  vertical-align: top;
+  position: relative;
+  padding-right: 20px;
+}
+.domains .accord .accorddesc .mba-cards .card .card-content .ext-link::after {
+  content: "";
+  background: transparent url("../img/arrow-left-move.png") scroll no-repeat right center;
+  position: absolute;
+  width: 13px;
+  height: 10px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 @media only screen and (max-width: 1462px) {
   .learner .learners-carousel .item .learner-text {
@@ -1848,6 +2037,11 @@ footer p {
 @media only screen and (max-width: 1190px) {
   .about .highlight {
     min-height: 140px;
+  }
+}
+@media only screen and (max-width: 1156px) {
+  .domains .accord .accorddesc .mba-cards .card .card-content {
+    min-height: 220px;
   }
 }
 @media only screen and (max-width: 1087px) {
@@ -2000,9 +2194,6 @@ footer p {
   footer {
     margin-bottom: 75px;
   }
-  .innerpage {
-    margin-bottom: 50px;
-  }
   .innerpage::after {
     display: none;
   }
@@ -2017,8 +2208,22 @@ footer p {
     margin-bottom: 20px;
     margin-top: 20px;
   }
+  .innerpage .enquire .vis-mob .hashtag::after {
+    content: "";
+    background: transparent url("../img/plus-sign-12-12.png") scroll no-repeat top left;
+    height: 17px;
+    width: 16px;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 70px;
+  }
   .innerpage .enquire .f-wrapper {
     margin-top: 0;
+  }
+  .online {
+    padding-top: 45px;
   }
   .online .tabbed-content .tab-item .item-content .toggle {
     font-size: 14px;
@@ -2026,6 +2231,13 @@ footer p {
   }
   .listpage {
     margin-bottom: 0;
+  }
+  .listpage .text-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .listpage .all-domain .dommain-list {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -2233,6 +2445,9 @@ footer p {
     bottom: auto;
     margin-right: 0;
   }
+  .innerpage .enquire .vis-mob .hashtag::after {
+    margin-left: 56px;
+  }
   .online h2 {
     font-size: 22px;
     line-height: 30px;
@@ -2258,6 +2473,15 @@ footer p {
   .faq .accord .accorddesc p {
     font-size: 14px;
     line-height: 24px;
+  }
+  .listpage .all-domain {
+    margin-top: 20px;
+  }
+  .listpage .all-domain ul li {
+    font-size: 12px;
+    margin-right: 8px;
+    min-width: 70px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -2285,5 +2509,9 @@ footer p {
   }
   .top-banner .text-box .features .di-block .text-info p:first-child {
     font-size: 12px;
+  }
+  .listpage .all-domain ul li {
+    min-width: 60px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

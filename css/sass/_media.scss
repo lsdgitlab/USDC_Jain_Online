@@ -32,6 +32,25 @@
     }
 }
 
+@media only screen and (max-width:1156px) {
+
+    //program-listing or domain page css
+    .domains {
+        .accord {
+            .accorddesc {
+                .mba-cards {
+                    .card {
+                        .card-content {
+                            min-height: 220px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:1087px) {
     .learner {
         .learners-carousel {
@@ -49,7 +68,6 @@
         .white-box {
             min-height: 494px;
         }
-
     }
 }
 
@@ -377,56 +395,89 @@
 
 
     //program detail page css
-    .innerpage{
-        margin-bottom: 50px;
-        &::after{
+    .innerpage {
+
+        // margin-bottom: 50px;
+        &::after {
             display: none;
         }
-        .text-box{
-            h1{
-                &::before{
+
+        .text-box {
+            h1 {
+                &::before {
                     left: 50%;
                     transform: translateX(-50%);
-                }                
+                }
             }
         }
+
         .enquire {
-            .vis-mob{
-                .hashtag{
-                    position: relative;
+            .vis-mob {
+                .hashtag {
+                    @include pos-relative();
                     bottom: auto;
                     right: auto;
                     margin-bottom: 20px;
                     margin-top: 20px;
+
+                    &::after {
+                        content: "";
+                        background: transparent url("../img/plus-sign-12-12.png") scroll no-repeat top left;
+                        height: 17px;
+                        width: 16px;
+                        position: absolute;
+                        top: -8px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-left: 70px;
+                    }
                 }
             }
-            .f-wrapper{
+
+            .f-wrapper {
                 margin-top: 0;
-            
+
             }
         }
     }
-    .online{
-        .tabbed-content{
-            .tab-item{
-                .item-content{
-                    .toggle{
+
+    .online {
+        padding-top: 45px;
+
+        .tabbed-content {
+            .tab-item {
+                .item-content {
+                    .toggle {
                         font-size: 14px;
                         line-height: 24px;
                     }
                 }
-    
+
             }
-            
+
         }
     }
-    
-    .listpage{
+
+    .listpage {
         margin-bottom: 0;
     }
 
-    
-    
+
+    //program-listing or domain page css
+    .listpage {
+        .text-box {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .all-domain {
+            .dommain-list {
+                text-align: center;
+            }
+        }
+    }
+
+
 
 
 }
@@ -667,9 +718,11 @@
             margin-bottom: 25px;
             padding-left: 20px;
         }
+
         .white-box {
             padding: 40px 18px;
-            &::after{
+
+            &::after {
                 top: -8px;
                 left: -4px;
             }
@@ -698,9 +751,10 @@
             //     margin-left: -110px;
             // }
         }
+
         .tab-section {
             .content-area {
-                .accord-content{
+                .accord-content {
                     padding: 20px 10px 48px;
                 }
             }
@@ -823,52 +877,78 @@
 
 
     //program detail page css
-    .innerpage{
+    .innerpage {
         .enquire {
             .vis-mob {
-                .hashtag {                    
+                .hashtag {
                     position: relative;
                     right: auto;
                     bottom: auto;
                     margin-right: 0;
+
+                    &::after {
+                        margin-left: 56px;
+                    }
                 }
             }
         }
     }
-    .online{
-        h2{
+
+    .online {
+        h2 {
             font-size: 22px;
             line-height: 30px;
         }
     }
 
-    .faq{
+    .faq {
         padding: 40px 0 60px;
-        .accord{
-            .accordbx{
-                padding:  0 13px;
+
+        .accord {
+            .accordbx {
+                padding: 0 13px;
                 margin-bottom: 9px;
-                .accordtitle{  
+
+                .accordtitle {
                     padding: 28px 13px 20px 0px;
-                    p{
+
+                    p {
                         line-height: 24px;
                         font-size: $font-size-base;
                         line-height: 24px;
                     }
                 }
-    
+
             }
-            .accorddesc{
+
+            .accorddesc {
                 padding: 0px 0 13px;
-                p{
+
+                p {
                     font-size: 14px;
                     line-height: 24px;
                 }
-                
+
             }
         }
     }
-    
+
+    //program-listing or domain page css
+    .listpage {
+        .all-domain {
+            margin-top: 20px;
+
+            ul {
+                li {
+                    font-size: 12px;
+                    margin-right: 8px;
+                    min-width: 70px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -885,10 +965,12 @@
                     max-width: 150px;
                     width: 100%;
                     margin-bottom: 25px;
-                    &:first-child{
+
+                    &:first-child {
                         margin-bottom: 25px;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         margin-bottom: 25px;
                     }
 
@@ -912,7 +994,20 @@
         }
     }
 
+    //program-listing or domain page css
+    .listpage {
+        .all-domain {
+            ul {
+                li {
+                    min-width: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
 }
+
 
 @media only screen and (max-width:320px) {
 

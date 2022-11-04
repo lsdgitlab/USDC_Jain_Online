@@ -1,16 +1,19 @@
-.listpage{
+.listpage {
     .text-box {
         background: transparent url("../img/program-list-page/program-listing-girl-desktop.png") no-repeat right center;
         background-position: 92% 33px;
-        .hashtag{
+
+        .hashtag {
             margin-top: 78px;
-           
+
         }
     }
-    .all-domain{
+
+    .all-domain {
         margin-top: 40px;
-        ul{
-            li{
+
+        ul {
+            li {
                 @include di-block();
                 @include valign-top();
                 cursor: default;
@@ -21,9 +24,132 @@
                 text-align: center;
                 padding: 4px 4px;
                 margin-right: 13px;
-                min-width: 76px;                
+                min-width: 76px;
                 @include border-radius(25px);
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
+        }
+    }
+}
+
+.list-page-rank {
+    padding-top: 25px;
+}
+
+.domains {
+    background: $color-f8;
+    @import "accordian";
+
+    .accord {
+        padding: 38px 0 50px;
+
+        .accordbx {
+            border-top: 1px solid $color-e1;
+
+            &:first-child {
+                border: none;
+            }
+        }
+
+        .accordtitle {
+            padding: 19px 0 19px 0px;
+
+            &::before,
+            &::after {
+                background: $darkgray;
+            }
+
+            p {
+                color: $darkgray;
+                font-size: 20px;
+            }
+
+        }
+
+        .accorddesc {
+            padding: 30px 0 60px;
+            border-top: 1px solid $color-e1;
+
+            .mba-cards {
+                .card {
+                    @include di-block();
+                    @include valign-top();
+                    background: $white;
+                    margin-bottom: 40px;
+                    width: 31.6%;
+
+                    &:nth-of-type(3n+2) {
+                        margin-left: 2.5%;
+                        margin-right: 2.5%;
+                    }
+
+                    .thumbnail {}
+
+                    .card-content {
+                        padding: 25px 20px;
+
+                        h3 {
+                            font-size: 18px;
+                            color: $darkgray;
+                            font-family: $font-family-gil-bd;
+                            text-align: left;
+                            margin: 0px 0 24px;
+                            line-height: 20px;
+                        }
+
+                        ul {
+                            @include unordered-list();
+
+                            li {
+                                color: $darkgray;
+                                font-size: 14px;
+                                text-align: left;
+                                padding-left: 0;
+                                @include cf();
+
+                                &::before {
+                                    display: none;
+                                }
+
+                                img {
+                                    float: left;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .ext-link {
+                            color: $darkgray;
+                            font-size: 14px;
+                            font-family: $font-family-gil-bd;
+                            text-align: left;
+                            text-decoration: underline;
+                            margin-top: 25px;
+                            @include di-block();
+                            @include valign-top();
+                            @include pos-relative();
+                            padding-right: 20px;
+
+                            &::after {
+                                content: "";
+                                background: transparent url("../img/arrow-left-move.png") scroll no-repeat right center;
+                                position: absolute;
+                                width: 13px;
+                                height: 10px;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 }
