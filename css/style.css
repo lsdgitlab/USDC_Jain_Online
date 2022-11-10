@@ -215,7 +215,7 @@ p {
 
 .more {
   display: none;
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   color: #232937;
   font-family: var(--pr-font-gilroyregular);
@@ -861,7 +861,7 @@ header .di-block .tel:hover span {
 }
 .program-overview .info .para {
   color: #232937;
-  font-size: 14px;
+  font-size: 15px;
   font-family: var(--pr-font-gilroyregular);
   line-height: 24px;
   text-align: left;
@@ -882,9 +882,9 @@ header .di-block .tel:hover span {
 }
 .program-overview ul li {
   color: #232937;
-  font-size: 14px;
   font-family: var(--pr-font-gilroyregular);
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: left;
   padding-left: 24px;
   margin-bottom: 15px;
@@ -919,7 +919,7 @@ header .di-block .tel:hover span {
   justify-content: stretch;
   align-items: flex-start;
   padding: 55px;
-  min-height: 480px;
+  min-height: 470px;
   background: #fff;
   box-shadow: 0px 0px 30px 0px rgba(5, 5, 5, 0.05);
   position: relative;
@@ -950,7 +950,7 @@ header .di-block .tel:hover span {
 }
 .program-overview .pr-overview .eligibility p {
   color: #232937;
-  font-size: 14px;
+  font-size: 15px;
   font-family: var(--pr-font-gilroyregular);
   text-align: left;
 }
@@ -967,7 +967,7 @@ header .di-block .tel:hover span {
           animation: color-BlackToYellow 5s infinite;
 }
 .program-overview .pr-highlight .highlight ul li {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 .program-overview .pr-highlight .highlight ul li:last-child {
   margin-bottom: 0;
@@ -1015,7 +1015,7 @@ header .di-block .tel:hover span {
   padding: 20px 10px;
 }
 .rank .rank-carousel .box .r-box {
-  min-height: 180px;
+  min-height: 190px;
   padding: 14px;
   background: #fff;
   border-radius: 5px;
@@ -1036,10 +1036,10 @@ header .di-block .tel:hover span {
 .rank .rank-carousel .box .r-box p {
   color: #646464;
   font-family: var(--pr-font-gilroylight);
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
-  min-height: 55px;
+  min-height: 60px;
 }
 
 .mba {
@@ -1384,7 +1384,7 @@ footer {
 footer p {
   color: rgba(239, 255, 255, 0.6);
   font-family: var(--pr-font-gilroylight);
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -2039,9 +2039,14 @@ footer p {
     min-height: 140px;
   }
 }
-@media only screen and (max-width: 1156px) {
-  .domains .accord .accorddesc .mba-cards .card .card-content {
-    min-height: 220px;
+@media only screen and (max-width: 1148px) {
+  .rank .rank-carousel .box .r-box {
+    min-height: 210px;
+  }
+}
+@media only screen and (max-width: 1135px) {
+  .program-overview .white-box {
+    min-height: 475px;
   }
 }
 @media only screen and (max-width: 1087px) {
@@ -2049,9 +2054,9 @@ footer p {
     min-height: 403px;
   }
 }
-@media only screen and (max-width: 1034px) {
+@media only screen and (max-width: 1085px) {
   .program-overview .white-box {
-    min-height: 494px;
+    min-height: 495px;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -2059,9 +2064,9 @@ footer p {
     min-height: 430px;
   }
 }
-@media only screen and (max-width: 1005px) {
-  .rank .rank-carousel .box .r-box {
-    min-height: 200px;
+@media only screen and (max-width: 995px) {
+  .program-overview .white-box {
+    min-height: 515px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -2165,6 +2170,15 @@ footer p {
     display: block;
     margin: 20px auto 0;
   }
+  .program-overview .white-box {
+    min-height: auto;
+    margin-bottom: 25px;
+  }
+  .program-overview .pr-overview,
+.program-overview .pr-highlight {
+    width: 100%;
+    padding: 0;
+  }
   .learner .learners-container {
     padding: 50px 0;
   }
@@ -2195,34 +2209,6 @@ footer p {
   footer {
     margin-bottom: 75px;
   }
-  .innerpage::after {
-    display: none;
-  }
-  .innerpage .text-box h1::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .innerpage .enquire .vis-mob .hashtag {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .innerpage .enquire .vis-mob .hashtag::after {
-    content: "";
-    background: transparent url("../img/plus-sign-12-12.png") scroll no-repeat top left;
-    height: 17px;
-    width: 16px;
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 70px;
-  }
-  .innerpage .enquire .f-wrapper {
-    margin-top: 0;
-  }
   .online {
     padding-top: 45px;
   }
@@ -2233,32 +2219,10 @@ footer p {
   .listpage {
     margin-bottom: 0;
   }
-  .listpage .text-box {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .listpage .all-domain .dommain-list {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .program-overview .white-box {
-    min-height: 512px;
-  }
-}
-@media only screen and (max-width: 914px) {
-  .program-overview .white-box {
-    min-height: 530px;
-  }
 }
 @media only screen and (max-width: 886px) {
   .learner .learners-carousel .item .learner-text {
     min-height: 355px;
-  }
-}
-@media only screen and (max-width: 871px) {
-  .program-overview .white-box {
-    min-height: 548px;
   }
 }
 @media only screen and (max-width: 834px) {
@@ -2267,11 +2231,6 @@ footer p {
   }
   .learner .learners-carousel .item .learner-text {
     min-height: 380px;
-  }
-}
-@media only screen and (max-width: 808px) {
-  .program-overview .white-box {
-    min-height: 584px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2378,6 +2337,11 @@ footer p {
   .rank .di-block .r-box p {
     min-height: auto;
   }
+  .rank .rank-carousel .box .r-box p {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: auto;
+  }
   .program-overview .heading, .program-overview .pr-overview .eligibility h3, .program-overview .pr-highlight .highlight h3 {
     font-size: 20px;
     line-height: 28px;
@@ -2440,6 +2404,75 @@ footer p {
   .about .highlight p:first-child span {
     font-size: 30px;
   }
+}
+@media only screen and (max-width: 400px) {
+  .top-banner .text-box .features {
+    max-width: 300px;
+    margin: 30px auto 0;
+  }
+  .top-banner .text-box .features .di-block {
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .top-banner .text-box .features .di-block:first-child {
+    margin-bottom: 25px;
+  }
+  .top-banner .text-box .features .di-block:nth-child(2) {
+    margin-bottom: 25px;
+  }
+  .top-banner .text-box .features .di-block img {
+    max-width: 25px;
+  }
+  .top-banner .text-box .features .di-block .text-info p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .top-banner .text-box .features .di-block .text-info p:first-child {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .innerpage::after {
+    display: none;
+  }
+  .innerpage .text-box h1::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .innerpage .enquire .vis-mob .hashtag {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .innerpage .enquire .vis-mob .hashtag::after {
+    content: "";
+    background: transparent url("../img/plus-sign-12-12.png") scroll no-repeat top left;
+    height: 17px;
+    width: 16px;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 70px;
+  }
+  .innerpage .enquire .f-wrapper {
+    margin-top: 0;
+  }
+  .online {
+    padding-top: 45px;
+  }
+  .online .tabbed-content .tab-item .item-content .toggle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .listpage {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
   .innerpage .enquire .vis-mob .hashtag {
     position: relative;
     right: auto;
@@ -2475,6 +2508,22 @@ footer p {
     font-size: 14px;
     line-height: 24px;
   }
+}
+@media only screen and (max-width: 1156px) {
+  .domains .accord .accorddesc .mba-cards .card .card-content {
+    min-height: 220px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .listpage .text-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .listpage .all-domain .dommain-list {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
   .listpage .all-domain {
     margin-top: 20px;
   }
@@ -2486,31 +2535,6 @@ footer p {
   }
 }
 @media only screen and (max-width: 400px) {
-  .top-banner .text-box .features {
-    max-width: 300px;
-    margin: 30px auto 0;
-  }
-  .top-banner .text-box .features .di-block {
-    max-width: 150px;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .top-banner .text-box .features .di-block:first-child {
-    margin-bottom: 25px;
-  }
-  .top-banner .text-box .features .di-block:nth-child(2) {
-    margin-bottom: 25px;
-  }
-  .top-banner .text-box .features .di-block img {
-    max-width: 25px;
-  }
-  .top-banner .text-box .features .di-block .text-info p {
-    font-size: 11px;
-    line-height: 16px;
-  }
-  .top-banner .text-box .features .di-block .text-info p:first-child {
-    font-size: 12px;
-  }
   .listpage .all-domain ul li {
     min-width: 60px;
     margin-bottom: 20px;

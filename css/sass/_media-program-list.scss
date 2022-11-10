@@ -1,0 +1,100 @@
+@media only screen and (max-width:1199px) {}
+
+
+
+@media only screen and (max-width:1156px) {
+
+    //program-listing or domain page css
+    .domains {
+        .accord {
+            .accorddesc {
+                .mba-cards {
+                    .card {
+                        .card-content {
+                            min-height: 220px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1023px) {}
+
+
+
+@media only screen and (max-width:991px) {
+
+
+    //program-listing or domain page css
+    .listpage {
+        .text-box {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .all-domain {
+            .dommain-list {
+                text-align: center;
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:767px) {}
+
+@media only screen and (max-width:600px) {}
+
+@media only screen and (max-width:575px) {
+
+
+
+    //program-listing or domain page css
+    .listpage {
+        .all-domain {
+            margin-top: 20px;
+
+            ul {
+                li {
+                    font-size: 12px;
+                    margin-right: 8px;
+                    min-width: 70px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:480px) {}
+
+@media only screen and (max-width:400px) {
+
+
+    //program-listing or domain page css
+    .listpage {
+        .all-domain {
+            ul {
+                li {
+                    min-width: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:320px) {}

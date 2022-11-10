@@ -82,7 +82,7 @@ header{
         span {
             color: $blue;
             font-family: $font-family-gil-rg;
-            font-size: 14px;
+            font-size: 14px;            
             font-weight: normal;
             text-transform: uppercase;
             -webkit-transform: rotate(180deg);
@@ -407,7 +407,8 @@ header{
         margin-bottom: 35px;
         .para{
             color: $darkgray;
-            font-size: 14px;
+            // font-size: 14px;
+            font-size: $font-size-small;
             font-family: $font-family-gil-rg;
             line-height: 24px;
             text-align: left;
@@ -427,10 +428,12 @@ header{
     ul{
         @include unordered-list();
         li{
-            color: $darkgray;
-            font-size: 14px;
+            color: $darkgray;            
             font-family: $font-family-gil-rg;
-            line-height: 18px;
+            // font-size: 14px;
+            // line-height: 18px;
+            font-size: $font-size-small;
+            line-height: 20px;
             text-align: left;
             padding-left: 24px;
             margin-bottom: 15px;
@@ -466,7 +469,8 @@ header{
         justify-content: stretch;
         align-items: flex-start;  
         padding: 55px;
-        min-height: 480px;
+        // min-height: 480px;
+        min-height: 470px;
         background: $white;        
         -webkit-box-shadow: 0px 0px 30px 0px rgba(5, 5, 5, 0.05);
         box-shadow: 0px 0px 30px 0px rgba(5, 5, 5, 0.05);  
@@ -509,7 +513,8 @@ header{
             p{
                 // color: $white;
                 color: $darkgray;
-                font-size: 14px;
+                // font-size: 14px;
+                font-size: $font-size-small;                
                 font-family: $font-family-gil-rg;
                 text-align: left;
                 &:last-child{
@@ -537,7 +542,8 @@ header{
             }
             ul{            
                 li{   
-                    margin-bottom: 18px;
+                    // margin-bottom: 18px;
+                    margin-bottom: 13px;
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -588,7 +594,8 @@ header{
         .box{
             padding: 20px 10px;
             .r-box {
-                min-height: 180px;
+                // min-height: 180px;
+                min-height: 190px;
                 padding: 14px;
                 background: $white;
                 @include border-radius(5px);
@@ -609,10 +616,13 @@ header{
                 p {
                     color: $lightblack;
                     font-family: $font-family-gil-lt;
-                    font-size: 12px;
-                    line-height: 18px;
+                    // font-size: 12px;
+                    font-size: 14px;
+                    // line-height: 18px;
+                    line-height: 20px;
                     text-align: center;
-                    min-height: 55px;
+                    // min-height: 55px;
+                    min-height: 60px;
                 }
             }
         }        
@@ -1030,7 +1040,8 @@ footer{
     p{
         color: rgb(239, 255, 255, .6);
         font-family: $font-family-gil-lt;
-        font-size: 14px;
+        // font-size: 14px;
+        font-size: $font-size-small;
         // text-align: left;
         text-align: center;
     }
@@ -1140,8 +1151,12 @@ footer{
     text-decoration: underline;
 }
 
+
 @import "sass/program-details";
+
 
 @import "sass/program-list";
 
+// @import "sass/media-all";
 @import "sass/media";
+

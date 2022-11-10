@@ -1,0 +1,165 @@
+@media only screen and (max-width:1199px) {}
+
+
+
+@media only screen and (max-width:1156px) {}
+
+
+@media only screen and (max-width:1023px) {}
+
+
+
+@media only screen and (max-width:991px) {
+
+
+
+
+
+
+    //program detail page css
+    .innerpage {
+
+        // margin-bottom: 50px;
+        &::after {
+            display: none;
+        }
+
+        .text-box {
+            h1 {
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        .enquire {
+            .vis-mob {
+                .hashtag {
+                    @include pos-relative();
+                    bottom: auto;
+                    right: auto;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+
+                    &::after {
+                        content: "";
+                        background: transparent url("../img/plus-sign-12-12.png") scroll no-repeat top left;
+                        height: 17px;
+                        width: 16px;
+                        position: absolute;
+                        top: -8px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-left: 70px;
+                    }
+                }
+            }
+
+            .f-wrapper {
+                margin-top: 0;
+
+            }
+        }
+    }
+
+    .online {
+        padding-top: 45px;
+
+        .tabbed-content {
+            .tab-item {
+                .item-content {
+                    .toggle {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .listpage {
+        margin-bottom: 0;
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:767px) {}
+
+@media only screen and (max-width:600px) {}
+
+@media only screen and (max-width:575px) {
+
+    //program detail page css
+    .innerpage {
+        .enquire {
+            .vis-mob {
+                .hashtag {
+                    position: relative;
+                    right: auto;
+                    bottom: auto;
+                    margin-right: 0;
+
+                    &::after {
+                        margin-left: 56px;
+                    }
+                }
+            }
+        }
+    }
+
+    .online {
+        h2 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    .faq {
+        padding: 40px 0 60px;
+
+        .accord {
+            .accordbx {
+                padding: 0 13px;
+                margin-bottom: 9px;
+
+                .accordtitle {
+                    padding: 28px 13px 20px 0px;
+
+                    p {
+                        line-height: 24px;
+                        font-size: $font-size-base;
+                        line-height: 24px;
+                    }
+                }
+
+            }
+
+            .accorddesc {
+                padding: 0px 0 13px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:480px) {}
+
+@media only screen and (max-width:400px) {}
+
+
+@media only screen and (max-width:320px) {}

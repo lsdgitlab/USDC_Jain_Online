@@ -237,7 +237,8 @@ p {
 
 .more{
     display: none;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: $font-size-small;
     text-align: left;
     color: $darkgray;
     font-family: $font-family-gil-rg;
