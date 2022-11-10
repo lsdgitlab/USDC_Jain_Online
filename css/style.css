@@ -733,6 +733,7 @@ header .di-block .tel:hover span {
   margin-bottom: 12px;
 }
 .top-banner .enquire .f-wrapper .form-wrapper input[type=text], .top-banner .enquire .f-wrapper .form-wrapper select {
+  border-radius: 0;
   color: #7a7a7a;
   background: #fff;
   border: 1px solid #ebebeb;
