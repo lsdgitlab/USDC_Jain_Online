@@ -1,3 +1,5 @@
+console.log("hhh");
+
 $(".rank-carousel.owl-carousel").owlCarousel({
     margin:0,nav:false,
     // navText:["<img src='images/arrow-prev.png' alt='prev'>","<img src='images/arrow-next.png' alt='next'>"],
@@ -149,9 +151,9 @@ $(document).ready(function() {
     var container = document.getElementById(id);
     sideScroll(container,direction,100);
   }
-  var position = $(".tab-section .cat-list li.current").position();
-  var elwidth = $(".tab-section .cat-list li.current").outerWidth();
-  sideScroll(document.getElementById('Tabs'),'right', (position.left- (elwidth/2)-6))
+  // var position = $(".tab-section .cat-list li.current").position();
+  // var elwidth = $(".tab-section .cat-list li.current").outerWidth();
+  // sideScroll(document.getElementById('Tabs'),'right', (position.left- (elwidth/2)-6))
   // end script for left right scroll on mobile 
 
   // form validation
@@ -200,8 +202,8 @@ $(document).ready(function() {
           var prselInxVal = prselInx.value;
           fanme.addEventListener("keyup", (e)=>{
            //    console.log("test");
-           var char = /[0-9]/gi;
-           if(/[0-9]/gi){
+           var char = /[^a-zA-Z]/g;
+           if(/[^a-zA-Z]/g){
               fanme.value = fanme.value.replace(char, "");
               setErrorFor(fanme, 'Please Enter Letters Only')  
            }   
@@ -220,8 +222,8 @@ $(document).ready(function() {
   
      mobile.addEventListener("keyup", (e)=>{
      //    console.log("test");
-     var num = /[a-zA-Z]/gi;
-     if(/[a-zA-Z]/gi){
+     var num = /[^0-9]/g;
+     if(/[^0-9]/g){
         mobile.value = mobile.value.replace(num, "");
         setErrorFor(mobile, 'Please Enter Numbers Only')  
      }
