@@ -329,6 +329,7 @@ header{
                             top:10px;
                             left:20px;
                             pointer-events:none;
+                            color: $black-gray;
                             font-family:var(--pr-font-gilroyregular);
                             font-size:12px;
                             span {
@@ -643,6 +644,9 @@ header{
         // }
     }
     .tab-section{
+        .navigation-arrow{
+            display: none;
+        }
 
         @import "./sass/hor-tab-pills";
 
@@ -844,6 +848,7 @@ header{
                     color: $black-graycolor;
                     font-family: $font-family-gil-rg;
                     font-size: 14px;
+                    // font-size: $font-size-small;
                     font-weight: normal;
                     text-align: center;
                     line-height: 24px;                    
@@ -877,7 +882,8 @@ header{
                     span.course-name{
                         display: block;
                         color: $darkgray;
-                        font-size: 14px;
+                        // font-size: 14px;
+                        font-size: $font-size-small;
                         line-height: 24px;                        
                         text-align: center;
                     }

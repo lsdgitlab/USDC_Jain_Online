@@ -137,6 +137,23 @@ $(document).ready(function() {
 
   });
 
+  // script for left right scroll on mobile view 
+  function sideScroll(element,direction,step){
+    if(direction == 'left'){
+        element.scrollLeft -= step;
+    } else {
+        element.scrollLeft += step;
+    }
+  }
+  function scrollbtn(id, direction){
+    var container = document.getElementById(id);
+    sideScroll(container,direction,100);
+  }
+  var position = $(".tab-section .cat-list li.current").position();
+  var elwidth = $(".tab-section .cat-list li.current").outerWidth();
+  sideScroll(document.getElementById('Tabs'),'right', (position.left- (elwidth/2)-6))
+  // end script for left right scroll on mobile 
+
   // form validation
   const labels = document.querySelectorAll('.form-control label');
   labels.forEach( inptlabel =>{

@@ -799,6 +799,7 @@ header .di-block .tel:hover span {
   top: 10px;
   left: 20px;
   pointer-events: none;
+  color: #7a7a7a;
   font-family: var(--pr-font-gilroyregular);
   font-size: 12px;
 }
@@ -1050,6 +1051,9 @@ header .di-block .tel:hover span {
   text-align: center;
   color: #fff;
 }
+.mba .tab-section .navigation-arrow {
+  display: none;
+}
 .mba .tab-section .cat-list {
   margin: 0 10px;
   display: flex;
@@ -1084,6 +1088,11 @@ header .di-block .tel:hover span {
   background: #f8c300;
   color: #232937;
   font-family: var(--pr-font-gilroybold);
+}
+@media screen and (max-width: 991px) {
+  .mba .tab-section .cat-list li {
+    font-size: 14px;
+  }
 }
 .mba .tab-section .content-area .accord-content {
   display: none;
@@ -1244,7 +1253,7 @@ header .di-block .tel:hover span {
 .learner .learners-carousel .item .learner-text .learner-name span.course-name {
   display: block;
   color: #232937;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   text-align: center;
 }
@@ -2071,7 +2080,7 @@ footer p {
 }
 @media only screen and (max-width: 991px) {
   .enquire-now {
-    display: block;
+    display: none;
   }
   .top-banner {
     background-image: none;
@@ -2252,6 +2261,29 @@ footer p {
 .program-overview .pr-highlight {
     width: 100%;
     padding: 0;
+  }
+  .mba .tab-section {
+    position: relative;
+  }
+  .mba .tab-section .navigation-arrow {
+    width: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    background: #fff;
+    padding: 5px 0;
+  }
+  .mba .tab-section .navigation-arrow.arrow-left {
+    left: 0;
+  }
+  .mba .tab-section .navigation-arrow.arrow-right {
+    right: 0;
+  }
+  .mba .tab-section .navigation-arrow img {
+    width: 7px;
+  }
+  .mba .tab-section .cat-list {
+    margin: 0 30px;
   }
   .learner .learners-carousel .item .learner-text {
     min-height: auto;

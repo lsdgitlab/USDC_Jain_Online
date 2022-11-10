@@ -121,7 +121,8 @@
 
 @media only screen and (max-width:991px) {
     .enquire-now {
-        display: block;
+        // display: block;
+        display: none;
     }
 
     .top-banner {
@@ -481,6 +482,32 @@
             padding: 0;
         }
 
+    }
+
+    .mba{
+        .tab-section{
+            @include pos-relative();
+            .navigation-arrow {
+                width: 25px;
+                display: inline-block;
+                position: absolute;                
+                top: 12px;
+                background: #fff;
+                padding: 5px 0;
+                &.arrow-left{
+                    left: 0;
+                }
+                &.arrow-right{
+                    right: 0;
+                }
+                img {
+                    width: 7px;
+                  }
+              }
+              .cat-list{
+                margin: 0 30px;
+              }
+        }
     }
 
     .learner .learners-carousel .item .learner-text {
