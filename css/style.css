@@ -1473,7 +1473,7 @@ footer p {
 .innerpage::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   height: 75px;
   background: #fff;
