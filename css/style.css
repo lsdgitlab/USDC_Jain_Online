@@ -2572,4 +2572,47 @@ footer p {
     min-width: 60px;
     margin-bottom: 20px;
   }
+}
+.mca-banner {
+  background: #001c54 url(../img/mca/shadow-wth-boy-desktop.png) scroll no-repeat center bottom;
+  background-position-x: 51.4%;
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .mca-banner {
+    background-image: none;
+    position: relative;
+  }
+  .mca-banner .di-block:nth-child(2) .vis-mob::after {
+    background: #00205c url("../img/mca/shadow.png") scroll no-repeat center bottom;
+    background-size: auto;
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  .mca-banner .di-block:nth-child(2) .vis-mob img {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px;
+  }
+  .mca-banner .di-block:nth-child(2) .vis-mob .hashtag {
+    z-index: 10;
+  }
+  .mca-banner .text-box {
+    z-index: 10;
+    position: relative;
+  }
+  .mca-banner .enquire .f-wrapper {
+    position: relative;
+    z-index: 10;
+  }
 }/*# sourceMappingURL=style.css.map */
