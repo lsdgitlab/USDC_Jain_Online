@@ -1,95 +1,35 @@
-
-.mca-banner{
-    background: $darkblue url(../img/mca/shadow-wth-boy-desktop.png) scroll no-repeat center bottom;
-    // background-position: 52% 0;
-    background-position-x: 51.4%;
+.mca-banner {
+    background: $darkblue url(../img/mca/MCA-BG.png) scroll no-repeat center bottom;
+    background-position-x: 56%;
     height: 100%;
-    
+
 }
 
 @media screen and (max-width:991px) {
     .mca-banner {
-         // &::after {
-    //     background: #00205c url("../img/mca/shadow.png") scroll no-repeat center bottom;
-    //     background-size: auto;
-    //     background-size: auto;
-    //     border-radius: 50%;
-    //     position: absolute;
-    //     left: 50%;
-    //     top: 354px;
-    //     content: "";
-    //     width: 360px;
-    //     height: 360px;
-    //     background-size: cover;
-    //     z-index: 1;
-    //     transform: translateX(-50%);
-    // }  
         background-image: none;
         @include pos-relative();
-    
-        .di-block {
-            &:nth-child(2) {
-                .vis-mob {
-                    // &::after {
-                    //     background: #001c54 url("../img/mca/shadow.png") scroll no-repeat center bottom;
-                    //     background-size: auto;
-                    //     border-radius: 50%;
-                    //     position: absolute;
-                    //     left: 50%;
-                    //     bottom: -60px;
-                    //     content: "";
-                    //     width: 359px;
-                    //     height: 425px;
-                    //     background-size: cover;
-                    //     z-index: 1;
-                    //     transform: translateX(-50%);
-                    // }
-                     &::after {
-                        background: #00205c url("../img/mca/shadow.png") scroll no-repeat center bottom;
-                        background-size: auto;
-                        background-size: auto;
-                        border-radius: 50%;
-                        position: absolute;
-                        left: 50%;
-                        bottom: 0;
-                        content: "";
-                        width: 360px;
-                        height: 360px;
-                        background-size: cover;
-                        z-index: 1;
-                        transform: translateX(-50%);
-                    }  
-    
-                    img {
-                        position: relative;
-                        z-index: 10;
-                        padding-bottom: 22px;
-                    }
-    
-                    .hashtag {
-                        z-index: 10;
-                    }
-                }
-    
-            }
-    
-    
-    
-        }
-    
-        .text-box {
-            z-index: 10;
-            position: relative;
-        }
-    
+
+
         .enquire {
             .f-wrapper {
-                position: relative;
-                z-index: 10;
+                margin-top: 0;
             }
         }
-    
-    
+
     }
-    
+
+}
+
+@media screen and (max-width: 340px) {
+    .mca-banner {
+        .enquire {
+            .vis-mob {
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
 }
